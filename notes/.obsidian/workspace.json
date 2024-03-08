@@ -25,7 +25,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Closures.md",
+                "file": "Practice Problems/Closure Exercises.md",
                 "mode": "source",
                 "source": false
               }
@@ -160,11 +160,12 @@
   },
   "active": "fce35744df878a0b",
   "lastOpenFiles": [
-    "Closures.md",
+    "Practice Problems/Closure Exercises.md",
     "Functions.md",
+    "Practice Problems",
+    "Welcome.md",
     "Invoking a function.md",
     "invoked.md",
-    "Welcome.md",
     "Cheatsheet",
     "test.md",
     "testjs.js"
