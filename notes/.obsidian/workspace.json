@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Welcome.md",
+                "file": "Functions.md",
                 "mode": "source",
                 "source": false
               }
@@ -25,14 +25,13 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Welcome.md",
+                "file": "Closures.md",
                 "mode": "source",
                 "source": false
               }
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -98,7 +97,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Welcome.md",
+                "file": "Functions.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -115,7 +114,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Welcome.md",
+                "file": "Functions.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -138,7 +137,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Welcome.md"
+                "file": "Functions.md"
               }
             }
           }
@@ -159,11 +158,15 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "b82c688a9cea064b",
+  "active": "fce35744df878a0b",
   "lastOpenFiles": [
-    "testjs.js",
-    "Untitled.md",
+    "Closures.md",
+    "Functions.md",
+    "Invoking a function.md",
+    "invoked.md",
+    "Welcome.md",
+    "Cheatsheet",
     "test.md",
-    "Welcome.md"
+    "testjs.js"
   ]
 }
