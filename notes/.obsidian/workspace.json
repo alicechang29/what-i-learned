@@ -13,19 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Functions.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "b82c688a9cea064b",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Practice Problems/Closure Exercises.md",
+                "file": "Practice Problems/Functions,Closures,Timers,Callbacks.md",
                 "mode": "source",
                 "source": false
               }
@@ -97,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Functions.md",
+                "file": "Practice Problems/Functions,Closures,Timers,Callbacks.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -114,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Functions.md",
+                "file": "Practice Problems/Functions,Closures,Timers,Callbacks.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -137,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Functions.md"
+                "file": "Practice Problems/Functions,Closures,Timers,Callbacks.md"
               }
             }
           }
@@ -160,8 +148,9 @@
   },
   "active": "fce35744df878a0b",
   "lastOpenFiles": [
-    "Practice Problems/Closure Exercises.md",
     "Functions.md",
+    "Practice Problems/Functions,Closures,Timers,Callbacks.md",
+    "Practice Problems/Closure Exercises.md",
     "Practice Problems",
     "Welcome.md",
     "Invoking a function.md",
