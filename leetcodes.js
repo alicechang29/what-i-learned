@@ -117,3 +117,53 @@ var getCommon = function (nums1, nums2) {
   }
   return -1;
 };
+
+/*
+Given two integer arrays nums1 and nums2, return an array of their intersection. 
+Each element in the result must be unique and you may return the result in any order.
+
+Example 1:
+
+Input: nums1 = [1,2,2,1], nums2 = [2,2]
+Output: [2]
+Example 2:
+
+Input: nums1 = [4,9,5], nums2 = [9,4,9,8,4]
+Output: [9,4]
+Explanation: [4,9] is also accepted.
+ 
+
+Constraints:
+
+1 <= nums1.length, nums2.length <= 1000
+0 <= nums1[i], nums2[i] <= 1000
+
+check if the value in nums1 exists in nums2
+if it does, check if the value already exists in the output 
+if it doesnt, add it to the output
+
+do a freq counter on nums1 array 
+check it against nums2 
+if it exists, put it in the output 
+
+*/
+
+var intersection = function (nums1, nums2) {
+  //[1,2,2,1]
+  let counterObj = {};
+  //1:true, 2: true
+  for (let val of nums1) {
+    if (!(val in counterObj)) {
+      counterObj[val] = true;
+    }
+  }
+  let output = [];
+
+  for (let val of nums2) {
+    if (counterObj[val]) {
+      output.push(val);
+      counterObj[val] = undefined;
+    }
+  }
+  return output;
+};
