@@ -167,3 +167,106 @@ var intersection = function (nums1, nums2) {
   }
   return output;
 };
+
+/*
+You are given two strings order and s. All the characters of order are unique and were sorted in some custom order previously.
+
+Permute the characters of s so that they match the order that order was sorted. 
+More specifically, if a character x occurs before a character y in order, then x should occur before y in the permuted string.
+
+Return any permutation of s that satisfies this property.
+
+Example 1:
+
+Input:  order = "cba", s = "abcd" 
+
+Output:  "cbad" 
+
+Explanation: "a", "b", "c" appear in order, so the order of "a", "b", "c" should be "c", "b", and "a".
+
+Since "d" does not appear in order, it can be at any position in the returned string. "dcba", "cdba", "cbda" are also valid outputs.
+
+Example 2:
+
+Input:  order = "bcafg", s = "abcd" 
+
+Output:  "bcad" 
+
+Explanation: The characters "b", "c", and "a" from order dictate the order for the characters in s. The character "d" in s does not appear in order, so its position is flexible.
+
+Following the order of appearance in order, "b", "c", and "a" from s should be arranged as "b", "c", "a". "d" can be placed at any position since it's not in order. The output "bcad" correctly follows this rule. Other arrangements like "bacd" or "bcda" would also be valid, as long as "b", "c", "a" maintain their order.
+
+
+ex3: 
+order = "kqep"
+s = "pekeq"
+
+output: "kqeep"
+
+Constraints:
+
+1 <= order.length <= 26
+1 <= s.length <= 200
+order and s consist of lowercase English letters.
+All the characters of order are unique.
+
+
+given 2 strings, Order and S 
+
+order can contain letters that are not included in s 
+
+if the letter in order is included in s, push that into an output 
+else skip the letter 
+
+if there are any remaining letters in s that are not in output, tack it onto the end 
+
+can do a freq counter on s 
+run a loop on order string 
+if the letter in order is in the freq counter, add it into output and subtract 1 
+if there are any values remaining, tack them to the end of output 
+
+*/
+var customSortString = function (order, s) {
+  /*
+order = "kqep"
+s = "pekeq"
+
+output: "kqeep"
+  */
+  const sCharsObj = freqCounter(s);
+
+  let output = ""; //cbad
+
+  for (let char of order) {
+    while (sCharsObj[char]) {
+      //if this is truthy, add to output
+      output += char;
+      //subtract 1
+      sCharsObj[char]--;
+    }
+  }
+
+  for (let key in sCharsObj) {
+    //looping through the sCharsObj
+    while (sCharsObj[key]) {
+      //while the key's val is truthy
+      output += key;
+      //keep on adding the key
+      sCharsObj[key]--;
+      //subtract the key's value
+    }
+  }
+  return output;
+};
+
+function freqCounter(s) {
+  let counter = {};
+  for (let char of s) {
+    if (!(char in counter)) {
+      counter[char] = 1;
+    } else {
+      counter[char]++;
+    }
+  }
+  return counter;
+}
