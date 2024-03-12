@@ -2,7 +2,7 @@
 https://leetcode.com/problems/transpose-matrix/submissions/1198068382/
 Given a 2D integer array matrix, return the transpose of matrix.
 
-The transpose of a matrix is the matrix flipped over its main diagonal, 
+The transpose of a matrix is the matrix flipped over its main diagonal,
 switching the matrix's row and column indices.
 
 Example 1:
@@ -13,7 +13,7 @@ Example 2:
 
 Input: matrix = [[1,2,3],[4,5,6]]
 Output: [[1,4],[2,5],[3,6]]
- 
+
 
 Constraints:
 
@@ -23,17 +23,17 @@ n == matrix[i].length
 1 <= m * n <= 105
 -109 <= matrix[i][j] <= 109
 
-given a matrix, i need to pull out the values from the matching indexes 
-from each nested array and put it in an output array so that: 
+given a matrix, i need to pull out the values from the matching indexes
+from each nested array and put it in an output array so that:
 
 [[all the index 0's], [all the index 1's], etc]
 
 can loop through the given array, and access each nested array
-create an object by index values 
-- for each nested array, push in the value by index into the object 
+create an object by index values
+- for each nested array, push in the value by index into the object
 
-loop over the object 
-put all the key values into an output array 
+loop over the object
+put all the key values into an output array
 
 */
 var transpose = function (matrix) {
@@ -50,8 +50,8 @@ function objOfIndexes(matrix) {
   let matrixObj = {};
   /*
     matrixObj = {
-        0: [1,4,7], 
-        1: [2,5,8], 
+        0: [1,4,7],
+        1: [2,5,8],
         2: [3,6,9]
     }
   */
@@ -71,10 +71,10 @@ function objOfIndexes(matrix) {
 
 /*
 https://leetcode.com/problems/minimum-common-value/submissions/1198965520/?envType=daily-question&envId=2024-03-09
-Given two integer arrays nums1 and nums2, sorted in non-decreasing order, return the minimum integer common to both arrays. 
+Given two integer arrays nums1 and nums2, sorted in non-decreasing order, return the minimum integer common to both arrays.
 If there is no common integer amongst nums1 and nums2, return -1.
 
-Note that an integer is said to be common to nums1 and nums2 if both arrays have at least one occurrence of that integer. 
+Note that an integer is said to be common to nums1 and nums2 if both arrays have at least one occurrence of that integer.
 
 Example 1:
 
@@ -86,7 +86,7 @@ Example 2:
 Input: nums1 = [1,2,3,6], nums2 = [2,3,4,5]
 Output: 2
 Explanation: There are two common elements in the array 2 and 3 out of which 2 is the smallest, so 2 is returned.
- 
+
 
 Constraints:
 
@@ -94,13 +94,13 @@ Constraints:
 1 <= nums1[i], nums2[j] <= 109
 Both nums1 and nums2 are sorted in non-decreasing order.
 
-loop through array 1 
-if the value is included in array 2, return it 
-both arrays are sorted in ascending order  
+loop through array 1
+if the value is included in array 2, return it
+both arrays are sorted in ascending order
 
-loop through nums1 and collect the values 
-loop through nums2, if the value already exists in the object, return it 
-else -1 
+loop through nums1 and collect the values
+loop through nums2, if the value already exists in the object, return it
+else -1
 */
 
 var getCommon = function (nums1, nums2) {
@@ -119,7 +119,7 @@ var getCommon = function (nums1, nums2) {
 };
 
 /*
-Given two integer arrays nums1 and nums2, return an array of their intersection. 
+Given two integer arrays nums1 and nums2, return an array of their intersection.
 Each element in the result must be unique and you may return the result in any order.
 
 Example 1:
@@ -131,7 +131,7 @@ Example 2:
 Input: nums1 = [4,9,5], nums2 = [9,4,9,8,4]
 Output: [9,4]
 Explanation: [4,9] is also accepted.
- 
+
 
 Constraints:
 
@@ -139,12 +139,12 @@ Constraints:
 0 <= nums1[i], nums2[i] <= 1000
 
 check if the value in nums1 exists in nums2
-if it does, check if the value already exists in the output 
+if it does, check if the value already exists in the output
 if it doesnt, add it to the output
 
-do a freq counter on nums1 array 
-check it against nums2 
-if it exists, put it in the output 
+do a freq counter on nums1 array
+check it against nums2
+if it exists, put it in the output
 
 */
 
@@ -171,16 +171,16 @@ var intersection = function (nums1, nums2) {
 /*
 You are given two strings order and s. All the characters of order are unique and were sorted in some custom order previously.
 
-Permute the characters of s so that they match the order that order was sorted. 
+Permute the characters of s so that they match the order that order was sorted.
 More specifically, if a character x occurs before a character y in order, then x should occur before y in the permuted string.
 
 Return any permutation of s that satisfies this property.
 
 Example 1:
 
-Input:  order = "cba", s = "abcd" 
+Input:  order = "cba", s = "abcd"
 
-Output:  "cbad" 
+Output:  "cbad"
 
 Explanation: "a", "b", "c" appear in order, so the order of "a", "b", "c" should be "c", "b", and "a".
 
@@ -188,16 +188,16 @@ Since "d" does not appear in order, it can be at any position in the returned st
 
 Example 2:
 
-Input:  order = "bcafg", s = "abcd" 
+Input:  order = "bcafg", s = "abcd"
 
-Output:  "bcad" 
+Output:  "bcad"
 
 Explanation: The characters "b", "c", and "a" from order dictate the order for the characters in s. The character "d" in s does not appear in order, so its position is flexible.
 
 Following the order of appearance in order, "b", "c", and "a" from s should be arranged as "b", "c", "a". "d" can be placed at any position since it's not in order. The output "bcad" correctly follows this rule. Other arrangements like "bacd" or "bcda" would also be valid, as long as "b", "c", "a" maintain their order.
 
 
-ex3: 
+ex3:
 order = "kqep"
 s = "pekeq"
 
@@ -211,19 +211,19 @@ order and s consist of lowercase English letters.
 All the characters of order are unique.
 
 
-given 2 strings, Order and S 
+given 2 strings, Order and S
 
-order can contain letters that are not included in s 
+order can contain letters that are not included in s
 
-if the letter in order is included in s, push that into an output 
-else skip the letter 
+if the letter in order is included in s, push that into an output
+else skip the letter
 
-if there are any remaining letters in s that are not in output, tack it onto the end 
+if there are any remaining letters in s that are not in output, tack it onto the end
 
-can do a freq counter on s 
-run a loop on order string 
-if the letter in order is in the freq counter, add it into output and subtract 1 
-if there are any values remaining, tack them to the end of output 
+can do a freq counter on s
+run a loop on order string
+if the letter in order is in the freq counter, add it into output and subtract 1
+if there are any values remaining, tack them to the end of output
 
 */
 var customSortString = function (order, s) {
@@ -278,7 +278,7 @@ Return the total frequencies of elements in nums such that those elements all ha
 
 The frequency of an element is the number of occurrences of that element in the array.
 
- 
+
 
 Example 1:
 
@@ -292,19 +292,19 @@ Input: nums = [1,2,3,4,5]
 Output: 5
 Explanation: All elements of the array have a frequency of 1 which is the maximum.
 So the number of elements in the array with maximum frequency is 5.
- 
+
 
 Constraints:
 
 1 <= nums.length <= 100
 1 <= nums[i] <= 100
 
-count upt all the nums in the array using freq counter 
-find which key/val is the max frequency 
+count upt all the nums in the array using freq counter
+find which key/val is the max frequency
 
-find all the keys that have this max freq 
-- if there is a match, add 1 to the count 
-return count 
+find all the keys that have this max freq
+- if there is a match, add 1 to the count
+return count
 */
 
 var maxFrequencyElements = function (nums) {
@@ -331,4 +331,135 @@ var maxFrequencyElements = function (nums) {
     }
   }
   return countOfMaxes;
+};
+
+
+/*
+You start with an initial power of power, an initial score of 0, and a bag of tokens given as an integer array tokens, where each tokens[i] denotes the value of tokeni.
+
+Your goal is to maximize the total score by strategically playing these tokens.
+In one move, you can play an unplayed token in one of the two ways (but not both for the same token):
+
+Face-up: If your current power is at least tokens[i], you may play tokeni,
+losing tokens[i] power and gaining 1 score.
+
+Face-down: If your current score is at least 1, you may play tokeni,
+gaining tokens[i] power and losing 1 score.
+
+Return the maximum possible score you can achieve after playing any number of tokens.
+
+
+
+Example 1:
+
+Input: tokens = [100], power = 50
+
+Output: 0
+
+Explanation: Since your score is 0 initially, you cannot play the token face-down.
+You also cannot play it face-up since your power (50) is less than tokens[0] (100).
+
+Example 2:
+
+Input: tokens = [200,100], power = 150
+
+Output: 1
+
+Explanation: Play token1 (100) face-up, reducing your power to 50 and increasing your score to 1.
+
+There is no need to play token0, since you cannot play it face-up to add to your score.
+The maximum score achievable is 1.
+
+Example 3:
+
+Input: tokens = [100,200,300,400], power = 200
+
+Output: 2
+
+Explanation: Play the tokens in this order to get a score of 2:
+
+Play token0 (100) face-up, reducing power to 100 and increasing score to 1.
+Play token3 (400) face-down, increasing power to 500 and reducing score to 0.
+Play token1 (200) face-up, reducing power to 300 and increasing score to 1.
+Play token2 (300) face-up, reducing power to 0 and increasing score to 2.
+The maximum score achievable is 2.
+
+
+
+Constraints:
+
+0 <= tokens.length <= 1000
+0 <= tokens[i], power < 104
+
+i have a group of tokens
+each token is a different value
+
+i have a power score
+
+when i have 0 points, i need to find the lowest token that i have
+- i will lose power = to token[i]
+- i will gain 1 point
+
+when i have more than 0 points, i need to find the highest token that i have
+- i will lose 1 point when i play the highest token
+- i will gain power = to token[i]
+
+goal is to:
+get most points by maximizing the amount of power that i have so i can purchase as
+many tokens as possible
+
+sort tokens in ascending order
+- check if lowest token is smaller than power
+> if no, return 0
+> if yes, subtract token from power and score++, leftPointer++
+
+once score is 1, find the highest token value
+> score--
+> power += token value, rightPointer--
+
+check if left token is smaller than power
+> if no, if score is 0, return score,
+else, power+= tokenvalu, score--
+
+> if yes, subtract token from power and score++, leftPointer++
+
+
+*/
+
+var bagOfTokensScore = function (tokens, power) {
+  //sort in asc order
+  tokens.sort(function (a, b) {
+    return a - b;
+  });
+
+  //Input: tokens = [100,200,300,400], power = 200
+
+  //power = 100+400 = 500 -200 = 300  = 0
+
+  let score = 0; //2
+
+  let left = 0; //3
+  let right = tokens.length - 1; //2
+
+  //fail fast
+  if (tokens[left] > power) {
+    return 0;
+  }
+
+  while (left <= right) { //1 < 2
+
+    if (tokens[left] <= power) {
+      power -= tokens[left];
+      score++;
+      left++;
+
+    } else if (tokens[left] > power && tokens[right] !== undefined && left !== right) {
+      power += tokens[right];
+      score--;
+      right--;
+    } else {
+      break;
+    }
+  }
+  return score;
 };
