@@ -463,3 +463,80 @@ var bagOfTokensScore = function (tokens, power) {
   }
   return score;
 };
+
+/*
+Given a positive integer n, find the pivot integer x such that:
+
+The sum of all elements between 1 and x inclusively equals the sum of all
+elements between x and n inclusively.
+
+Return the pivot integer x. If no such integer exists, return -1.
+It is guaranteed that there will be at most one pivot index for the given input.
+
+Example 1:
+
+Input: n = 8
+Output: 6
+Explanation: 6 is the pivot integer since: 1 + 2 + 3 + 4 + 5 + 6 = 6 + 7 + 8 = 21.
+Example 2:
+
+Input: n = 1
+Output: 1
+Explanation: 1 is the pivot integer since: 1 = 1.
+Example 3:
+
+Input: n = 4
+Output: -1
+Explanation: It can be proved that no such integer exist.
+
+
+Constraints:
+
+1 <= n <= 1000
+
+given the ending number (n):
+find the number where:
+sum between 1 and x is equal to sum between x and n
+
+the range of numbers is 1 to n
+
+[1,2,3,4,5,6,7,8]
+leftSum = 1+2+3+4 = 10+5 = 21
+leftPoint = 5
+rightSum = 8+7 = 21
+rightPoint = 5
+
+while (leftPoint <= rightPoint)
+if leftSum is less than rightSum, increase left pointer until leftSum is greater than or equal to rightSum
+else, increase rightPointer until rightSum is >= to leftSum
+*/
+
+var pivotInteger = function (n) {
+  //create an array from 1 to n
+  let rangeNums = [];
+  for (let i = 1; i <= n; i++) {
+    rangeNums.push(i);
+  }
+  //[1,2,3,4,5,6,7,8]
+  let leftPointer = 0; //5
+  let rightPointer = rangeNums.length - 1; //5
+
+  let leftSum = rangeNums[leftPointer]; //1+2+3+4+5+6
+  let rightSum = rangeNums[rightPointer];//8+7+6
+
+  while (leftPointer < rightPointer) { //3 <=6
+    if (leftSum <= rightSum) { //15 <=15
+      leftPointer++;
+      leftSum += rangeNums[leftPointer];
+    } else { //leftSum > rightSum 21 > 15
+      rightPointer--;
+      rightSum += rangeNums[rightPointer];
+    }
+  }
+
+  if (leftSum !== rightSum) {
+    return -1;
+  }
+
+  return rangeNums[leftPointer];
+};
