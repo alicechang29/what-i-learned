@@ -148,6 +148,9 @@
   },
   "active": "ff4f0aaf0e28d8cc",
   "lastOpenFiles": [
+    "Javascript Notes/Array-Methods.md",
+    "Algorithms/ConvertBinaryToDecimal.md",
+    "Algorithms/Binary-Search.md",
     "Algorithms/Binary Search",
     "Algorithms/binaryToDecimal.png",
     "Algorithms/image.png",
@@ -169,7 +172,6 @@
     "Invoking a function.md",
     "invoked.md",
     "Cheatsheet",
-    "test.md",
-    "testjs.js"
+    "test.md"
   ]
 }
