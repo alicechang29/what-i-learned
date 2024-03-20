@@ -540,3 +540,344 @@ var pivotInteger = function (n) {
 
   return rangeNums[leftPointer];
 };
+
+/*
+You are given an array of CPU tasks, each represented by letters A to Z, and a cooling time, n.
+Each cycle or interval allows the completion of one task.
+Tasks can be completed in any order, but there's a constraint:
+identical tasks must be separated by at least n intervals due to cooling time.
+
+ Return the minimum number of intervals required to complete all tasks.
+
+
+
+Example 1:
+
+Input: tasks = ["A","A","A","B","B","B"], n = 2
+
+Output: 8
+
+Explanation: A possible sequence is: A -> B -> idle -> A -> B -> idle -> A -> B.
+
+After completing task A, you must wait two cycles before doing A again.
+The same applies to task B. In the 3rd interval, neither A nor B can be done, so you idle.
+By the 4th cycle, you can do A again as 2 intervals have passed.
+
+Example 2:
+
+Input: tasks = ["A","C","A","B","D","B"], n = 1
+
+Output: 6
+
+Explanation: A possible sequence is: A -> B -> C -> D -> A -> B.
+
+With a cooling interval of 1, you can repeat a task after just one other task.
+
+Example 3:
+
+Input: tasks = ["A","A","A", "B","B","B"], n = 3
+
+Output: 10
+
+Explanation: A possible sequence is: A -> B -> idle -> idle -> A -> B -> idle -> idle -> A -> B.
+
+There are only two types of tasks, A and B, which need to be separated by 3 intervals.
+This leads to idling twice between repetitions of these tasks.
+
+
+
+Constraints:
+
+1 <= tasks.length <= 104
+tasks[i] is an uppercase English letter.
+0 <= n <= 100
+
+
+each value in the given array can only be listed every n+1 times
+
+can create an obj to keep track of:
+- count
+- index of last appearance
+
+{A: {count: 2,
+    lastIndex: 0},
+B: {count: 2,
+    lastIndex: 1}
+  }
+
+put the tasks in order, with idle inbetween
+count up the length of all the tasks
+*/
+
+var leastInterval = function (tasks, n) {
+
+  let outputTasks = [];
+
+  let trackerObj = freqCounter(tasks);
+
+  console.log("freq count", trackerObj);
+
+  for (let task in trackerObj) {
+    //the first push
+
+    outputTasks.push(task);
+    trackerObj[task].count--;
+
+    //update the last index
+
+    trackerObj[task].lastIndex = outputTasks.length - 1;
+  }
+
+  const initTaskLen = outputTasks.length;
+
+
+  for (let task in trackerObj) {
+
+    while (trackerObj[task].count > 0) {
+
+      console.log(task);
+      let indexForTask = null;
+
+      if (initTaskLen > n) {
+        indexForTask = trackerObj[task].lastIndex + initTaskLen;
+      } else {
+        indexForTask = trackerObj[task].lastIndex + initTaskLen + (n - initTaskLen);
+      }
+
+
+      outputTasks[indexForTask] = task;
+
+      trackerObj[task].lastIndex = indexForTask;
+
+      trackerObj[task].count--;
+    }
+  }
+
+  console.log(trackerObj);
+  console.log("output", outputTasks);
+
+  return outputTasks.length;
+
+};
+
+function freqCounter(tasks) {
+  let trackerObj = {};
+  for (let val of tasks) {
+
+    if (!(val in trackerObj)) {
+
+      trackerObj[val] = { count: 1 };
+    } else {
+
+      trackerObj[val].count++;
+    }
+  }
+  return trackerObj;
+}
+
+
+/*
+Given a binary array nums, return the maximum length of a contiguous subarray with an
+equal number of 0 and 1.
+
+
+
+Example 1:
+
+Input: nums = [0,1]
+Output: 2
+Explanation: [0, 1] is the longest contiguous subarray with an equal number of 0 and 1.
+Example 2:
+
+Input: nums = [0,1,0]
+Output: 2
+Explanation: [0, 1] (or [1, 0]) is a longest contiguous subarray with equal number of 0 and 1.
+
+given an array of 0 and 1's, find the longest subarray with equal numbers of both
+
+[0,0,0,1,1,1]
+
+count all the numbers. if 0 and 1 have same count, return the input array
+
+else
+
+start at i = 0. if val is 1, nxt has to be 0. else move i
+if val is 1 and next is 0, push into array and move i
+
+
+*/
+
+var findMaxLength = function (nums) {
+
+  const counter = freqCounter(nums);
+
+  if (counter["0"] === counter["1"]) {
+    return nums.length;
+  }
+
+  let maxCount = 0; //2
+
+  let zeroCount = 0; //1
+  let oneCount = 0; //2
+
+  let i = 0;//1
+  let j = i;//1
+
+  //while (i < nums.length) { //[0,1,1]
+
+  while (j < nums.length) { //j = 0
+
+    let curr = nums[j]; // 0
+    if (curr === 0) {
+      zeroCount++;
+    } else if (curr === 1) {
+      oneCount++;
+    }
+    if (zeroCount === oneCount) {
+      maxCount = Math.max(maxCount, zeroCount + oneCount);
+    }
+    j++;
+  }
+  //zeroCount = 0;
+  //oneCount = 0;
+  //i++;
+  //j = i;
+  //}
+
+  return maxCount;
+
+};
+
+function freqCounter(nums) {
+  let counter = {};
+
+  for (let val of nums) {
+
+    if (!(val in counter)) {
+      counter[val] = 1;
+    } else {
+      counter[val]++;
+    }
+  }
+  return counter;
+}
+
+
+/*
+try to add -1 at the places of 0.
+after that the question will transform into find the max length subarray whose sum is 0.
+*/
+
+var findMaxLength = function (nums) {
+  //[0,0,1,0,1]
+  let sum = 0; //-1, -2, -1, -2, -1
+  let currLen = 0; //4
+  let maxLen = 0; //0
+
+  let i = 0; //1
+  let j = i; //
+
+  while (i < nums.length) { //0 < 5
+
+    if (nums[j] !== undefined) {
+      if (nums[j] === 0) {
+
+        sum--;
+      } else if (nums[j] === 1) {
+
+        sum++;
+
+      }
+      currLen++;
+      j++;
+    }
+    if (sum === 0) {
+      maxLen = Math.max(maxLen, currLen);
+    }
+
+    if (nums[j] === undefined) {
+      sum = 0;
+      currLen = 0;
+      i++;
+      j = i;
+
+    }
+  }
+  return maxLen;
+};
+
+
+/*
+Given an integer array nums and an integer k, return true if there are two distinct indices i and j
+in the array such that nums[i] == nums[j] and abs(i - j) <= k.
+
+Example 1:
+
+Input: nums = [1,2,3,1], k = 3
+Output: true
+Example 2:
+
+Input: nums = [1,0,1,1], k = 1
+Output: true
+Example 3:
+
+Input: nums = [1,2,3,1,2,3], k = 2
+Output: false
+
+given an array, and an integer - k
+see if there are 2 values that are the same AND the index at of those values fits criteria
+abs(i - j) <= k
+
+find all the values and the index of those values:
+
+{1: [0, 3],
+ 2: [1],
+ 3: [2]}
+
+{1: [0,3]
+ 2: [1,4]
+ 3: [2,5]}
+
+ if arr.length > 1:
+ check for the difference
+
+ difference check
+
+*/
+
+var containsNearbyDuplicate = function (nums, k) {
+  //[1,2,3,1,1,2,3], 0
+
+  let indexOfVals = {};
+
+  for (let i = 0; i < nums.length; i++) {
+
+    if (!(nums[i] in indexOfVals)) {
+      indexOfVals[nums[i]] = [i];
+    } else {
+      indexOfVals[nums[i]].push(i);
+    }
+  }
+
+  for (let key in indexOfVals) {
+
+    if (indexOfVals[key].length > 1) {
+
+      let i = 0;
+      let j = i + 1;
+
+      while (i < indexOfVals[key].length - 1) {
+        if (indexOfVals[key][j] !== undefined) {
+          if (Math.abs(Number(indexOfVals[key][i], indexOfVals[key][j])) <= k) {
+            return true;
+          }
+          j++;
+        } else {
+          i++;
+          j = i;
+        }
+      }
+    }
+  }
+  return false;
+};
