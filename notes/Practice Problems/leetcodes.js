@@ -786,7 +786,6 @@ count up the appearances of ea number
 */
 
 var findDuplicates = function (nums) {
-  let counter = {};
   let output = [];
   for (let val of nums) {
     if (!(val in counter)) {
