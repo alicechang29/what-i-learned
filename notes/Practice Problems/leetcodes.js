@@ -541,146 +541,11 @@ var pivotInteger = function (n) {
   return rangeNums[leftPointer];
 };
 
-/*
-You are given an array of CPU tasks, each represented by letters A to Z, and a cooling time, n.
-Each cycle or interval allows the completion of one task.
-Tasks can be completed in any order, but there's a constraint:
-identical tasks must be separated by at least n intervals due to cooling time.
-
- Return the minimum number of intervals required to complete all tasks.
-
-
-
-Example 1:
-
-Input: tasks = ["A","A","A","B","B","B"], n = 2
-
-Output: 8
-
-Explanation: A possible sequence is: A -> B -> idle -> A -> B -> idle -> A -> B.
-
-After completing task A, you must wait two cycles before doing A again.
-The same applies to task B. In the 3rd interval, neither A nor B can be done, so you idle.
-By the 4th cycle, you can do A again as 2 intervals have passed.
-
-Example 2:
-
-Input: tasks = ["A","C","A","B","D","B"], n = 1
-
-Output: 6
-
-Explanation: A possible sequence is: A -> B -> C -> D -> A -> B.
-
-With a cooling interval of 1, you can repeat a task after just one other task.
-
-Example 3:
-
-Input: tasks = ["A","A","A", "B","B","B"], n = 3
-
-Output: 10
-
-Explanation: A possible sequence is: A -> B -> idle -> idle -> A -> B -> idle -> idle -> A -> B.
-
-There are only two types of tasks, A and B, which need to be separated by 3 intervals.
-This leads to idling twice between repetitions of these tasks.
-
-
-
-Constraints:
-
-1 <= tasks.length <= 104
-tasks[i] is an uppercase English letter.
-0 <= n <= 100
-
-
-each value in the given array can only be listed every n+1 times
-
-can create an obj to keep track of:
-- count
-- index of last appearance
-
-{A: {count: 2,
-    lastIndex: 0},
-B: {count: 2,
-    lastIndex: 1}
-  }
-
-put the tasks in order, with idle inbetween
-count up the length of all the tasks
-*/
-
-var leastInterval = function (tasks, n) {
-
-  let outputTasks = [];
-
-  let trackerObj = freqCounter(tasks);
-
-  console.log("freq count", trackerObj);
-
-  for (let task in trackerObj) {
-    //the first push
-
-    outputTasks.push(task);
-    trackerObj[task].count--;
-
-    //update the last index
-
-    trackerObj[task].lastIndex = outputTasks.length - 1;
-  }
-
-  const initTaskLen = outputTasks.length;
-
-
-  for (let task in trackerObj) {
-
-    while (trackerObj[task].count > 0) {
-
-      console.log(task);
-      let indexForTask = null;
-
-      if (initTaskLen > n) {
-        indexForTask = trackerObj[task].lastIndex + initTaskLen;
-      } else {
-        indexForTask = trackerObj[task].lastIndex + initTaskLen + (n - initTaskLen);
-      }
-
-
-      outputTasks[indexForTask] = task;
-
-      trackerObj[task].lastIndex = indexForTask;
-
-      trackerObj[task].count--;
-    }
-  }
-
-  console.log(trackerObj);
-  console.log("output", outputTasks);
-
-  return outputTasks.length;
-
-};
-
-function freqCounter(tasks) {
-  let trackerObj = {};
-  for (let val of tasks) {
-
-    if (!(val in trackerObj)) {
-
-      trackerObj[val] = { count: 1 };
-    } else {
-
-      trackerObj[val].count++;
-    }
-  }
-  return trackerObj;
-}
 
 
 /*
 Given a binary array nums, return the maximum length of a contiguous subarray with an
 equal number of 0 and 1.
-
-
 
 Example 1:
 
@@ -709,102 +574,50 @@ if val is 1 and next is 0, push into array and move i
 
 var findMaxLength = function (nums) {
 
-  const counter = freqCounter(nums);
+  let maxLen = 0; // 6
+  let balance = 0; //-1
 
-  if (counter["0"] === counter["1"]) {
-    return nums.length;
-  }
+  let balanceMap = { 0: -1 };
 
-  let maxCount = 0; //2
+  /*
 
-  let zeroCount = 0; //1
-  let oneCount = 0; //2
-
-  let i = 0;//1
-  let j = i;//1
-
-  //while (i < nums.length) { //[0,1,1]
-
-  while (j < nums.length) { //j = 0
-
-    let curr = nums[j]; // 0
-    if (curr === 0) {
-      zeroCount++;
-    } else if (curr === 1) {
-      oneCount++;
-    }
-    if (zeroCount === oneCount) {
-      maxCount = Math.max(maxCount, zeroCount + oneCount);
-    }
-    j++;
-  }
-  //zeroCount = 0;
-  //oneCount = 0;
-  //i++;
-  //j = i;
-  //}
-
-  return maxCount;
-
+{  0: -1,
+  -1: 4,
+  -2: 3,
+  -3: 2,
+   0: 5
 };
 
-function freqCounter(nums) {
-  let counter = {};
+Iterate through the array and update the balance variable accordingly.
+For each balance encountered, store its index in the map if it hasn't been stored before.
 
-  for (let val of nums) {
+[0,0,0,1,1,1]
+  */
 
-    if (!(val in counter)) {
-      counter[val] = 1;
+  for (let i = 0; i < nums.length; i++) {
+
+    if (nums[i] === 0) {
+      balance--;
     } else {
-      counter[val]++;
+      balance++;
     }
-  }
-  return counter;
-}
+    if (!(balance in balanceMap)) {
 
+      balanceMap[balance] = i;
 
-/*
-try to add -1 at the places of 0.
-after that the question will transform into find the max length subarray whose sum is 0.
-*/
-
-var findMaxLength = function (nums) {
-  //[0,0,1,0,1]
-  let sum = 0; //-1, -2, -1, -2, -1
-  let currLen = 0; //4
-  let maxLen = 0; //0
-
-  let i = 0; //1
-  let j = i; //
-
-  while (i < nums.length) { //0 < 5
-
-    if (nums[j] !== undefined) {
-      if (nums[j] === 0) {
-
-        sum--;
-      } else if (nums[j] === 1) {
-
-        sum++;
-
-      }
-      currLen++;
-      j++;
-    }
-    if (sum === 0) {
+    } else {
+      //calculate the length
+      let currLen = i - balanceMap[balance]; // 2 - 0 = 2
       maxLen = Math.max(maxLen, currLen);
-    }
 
-    if (nums[j] === undefined) {
-      sum = 0;
-      currLen = 0;
-      i++;
-      j = i;
-
+      //update the index
+      balanceMap[balance] = i;
     }
   }
+
   return maxLen;
 };
+
 
 
 /*
@@ -880,4 +693,107 @@ var containsNearbyDuplicate = function (nums, k) {
     }
   }
   return false;
+};
+
+
+/*
+You are given a 0-indexed string s typed by a user. Changing a key is defined as using a key different from the last used key.
+For example, s = "ab" has a change of a key while s = "bBBb" does not have any.
+
+Return the number of times the user had to change the key.
+
+Note: Modifiers like shift or caps lock won't be counted in changing the key that is if a user typed the letter 'a'
+and then the letter 'A' then it will not be considered as a changing of key.
+
+
+Example 1:
+
+Input: s = "aAbBcC"
+Output: 2
+Explanation:
+From s[0] = 'a' to s[1] = 'A', there is no change of key as caps lock or shift is not counted.
+From s[1] = 'A' to s[2] = 'b', there is a change of key.
+From s[2] = 'b' to s[3] = 'B', there is no change of key as caps lock or shift is not counted.
+From s[3] = 'B' to s[4] = 'c', there is a change of key.
+From s[4] = 'c' to s[5] = 'C', there is no change of key as caps lock or shift is not counted.
+
+Example 2:
+
+Input: s = "AaAaAaaA"
+Output: 0
+Explanation: There is no change of key since only the letters 'a' and 'A' are pressed which does not require change of key.
+
+
+Constraints:
+
+1 <= s.length <= 100
+s consists of only upper case and lower case English letters.
+
+note the starting letter
+if the letter changes, count as 1
+store the prev letter
+do for entire string
+*/
+
+var countKeyChanges = function (s) {
+  let startKey = s[0].toLowerCase();
+  let count = 0;
+
+  let i = 1;
+  while (i < s.length) {
+
+    if (s[i].toLowerCase() === startKey) {
+      i++;
+
+    } else {
+      count++;
+      startKey = s[i].toLowerCase();
+    }
+  }
+  return count;
+
+};
+
+/*
+Given an integer array nums of length n where all the integers of nums are in the range [1, n]
+and each integer appears once or twice, return an array of all the integers that appears twice.
+
+You must write an algorithm that runs in O(n) time and uses only constant extra space.
+
+Example 1:
+
+Input: nums = [4,3,2,7,8,2,3,1]
+Output: [2,3]
+Example 2:
+
+Input: nums = [1,1,2]
+Output: [1]
+Example 3:
+
+Input: nums = [1]
+Output: []
+
+
+Constraints:
+
+n == nums.length
+1 <= n <= 105
+1 <= nums[i] <= n
+Each element in nums appears once or twice.
+
+count up the appearances of ea number
+
+*/
+
+var findDuplicates = function (nums) {
+  let counter = {};
+  let output = [];
+  for (let val of nums) {
+    if (!(val in counter)) {
+      counter[val] = 1;
+    } else {
+      output.push(val);
+    }
+  }
+  return output;
 };
