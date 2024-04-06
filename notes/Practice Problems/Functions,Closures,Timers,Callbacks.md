@@ -190,3 +190,61 @@ function specialMultiply(a, b) {
   return a * b;
 }
 ```
+
+
+
+Rewriting this function using: .map, .filter, .reduce
+
+```js
+function sumOfTripledEvens(array) {
+  let sum = 0;
+  for (let i = 0; i < array.length; i++) {
+    // Step 1: If the element is an even number
+    if (array[i] % 2 === 0) {
+      // Step 2: Multiply this number by three
+      const tripleEvenNumber = array[i] * 3;
+
+      // Step 3: Add the new number to the total
+      sum += tripleEvenNumber;
+    }
+  }
+  return sum;
+}
+```
+1- find all the even numbers
+2 - for all the even numbers, multiply by 3
+3 - add that to a running sum
+
+
+```js
+let arr = [1,2,3,4,5];
+
+function findEvens(num){
+  if(num % 2 === 0){
+    return true;
+  }
+  return false;
+}
+
+function tripleVal(num){
+  return num * 3;
+}
+
+function sumTotal(total, currentItem){ //this adds the current total with the current item value
+  return total + currentItem;
+}
+
+
+
+function tripleTheEvens(num){
+  return arr
+  .filter(findEvens) //[2,4]
+  .map(tripleVal) //[6,12]
+  .reduce(sumTotal, 0); //starting at index 0, adds each number to running total (6 + 12 = 18)
+}
+
+tripleTheEvens(); //18
+
+
+
+```

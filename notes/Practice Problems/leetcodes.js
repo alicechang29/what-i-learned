@@ -887,3 +887,180 @@ var reformat = function (s) {
   }
   return output;
 };
+
+/*
+Given a string s, return true if the s can be palindrome after deleting at most one character from it.
+
+Example 1:
+
+Input: s = "aba"
+Output: true
+Example 2:
+
+Input: s = "abca"
+Output: true
+Explanation: You could delete the character 'c'.
+Example 3:
+
+Input: s = "abc"
+Output: false
+
+
+Constraints:
+
+1 <= s.length <= 105
+s consists of lowercase English letters.
+
+palindrome is string that is read same forwards and back
+determine if there is a palindrome
+if not, delete 1 letter from the string and check
+if not, return false
+if yes, return true
+
+false:
+- if all letters are unique
+
+if string length is even:
+- aaaa
+- aaba
+
+2 pointers:
+- see if both letters match
+- if not, move left and see if theres a match,
+- try with right side
+
+if both match, move both pointers
+
+start in the middle (Math.floor(s.length/2))
+
+*/
+
+var validPalindrome = function (s) {
+  //"aguokepatgbnvfqmgml c u p uufxoohdfpgjdmysgvhmvffcnqxjjxqncffvmhvgsymdjgpfdhooxfuup u c u lmgmqfvnbgtapekouga"
+  //"qxjjxq -u"
+  //"a c xcybycx c x a"
+  let middle = Math.floor(s.length / 2);
+  let left = 0;
+  let right = s.length - 1;
+  let deleteStatus = false;
+
+  while (left <= right) {
+
+    if (s[left] && s[right]) { //if both are truthy // c , u
+      if (s[left] === s[right]) {
+        left++;
+        right--;
+
+      } else {
+        //check the next letter
+        if (deleteStatus === false) {
+          if (s[left + 1] === s[right] && s[left + 2] === s[right - 1]) { //u 20 , u 81 -- p 22, u 80
+            left += 2; //22
+            right--; //80
+            deleteStatus = true;
+          } else if (s[left] === s[right - 1] && s[left + 1] === s[right - 2]) { //c 19, c 80 -- u 20, u 79
+            right -= 2;
+            left++;
+            deleteStatus = true;
+          } else if (left + 1 === right) {  //THIS IS WRONG
+            //??? abc // abca
+            left++;
+            right--;
+            deleteStatus = true;
+          } else {
+            return false;
+          }
+        } else {
+          return false;
+        }
+      }
+    }
+
+  }
+  return true;
+};
+
+
+/*
+
+Given two strings s and t, determine if they are isomorphic.
+
+Two strings s and t are isomorphic if the characters in s can be replaced to get t.
+
+All occurrences of a character must be replaced with another character while preserving the order of characters.
+No two characters may map to the same character, but a character may map to itself.
+
+
+Example 1:
+
+Input: s = "egg", t = "add"
+Output: true
+
+Example 2:
+
+Input: s = "foo", t = "bar"
+Output: false
+Example 3:
+
+Input: s = "paper", t = "title"
+Output: true
+
+
+Constraints:
+
+1 <= s.length <= 5 * 104
+t.length == s.length
+s and t consist of any valid ascii character.
+
+fail fast:
+- count up how many unique characters in s vs t. if they don't match, false
+
+p:2 t: 2
+a:1 i: 1
+e:1 l: 1
+r:1 e: 1
+
+object keys are created in order.
+
+count up the letters
+loop through the s object
+if the count doesnt match the t object, return false
+*/
+
+var isIsomorphic = function (s, t) {
+  //each character in s is mapped to a charcter in t
+  //create a map first.
+
+  if (Object.keys(freqCounter(s)).length !== Object.keys(freqCounter(t)).length) {
+    return false;
+  }
+
+  let mapObj = {};
+
+  for (let i = 0; i < s.length; i++) {
+
+    if (!(s[i] in mapObj)) { //if the letter is not in map, map[s] = t letter
+      mapObj[s[i]] = t[i];
+    } else {
+      //check if the t letter is equal to the value that is there
+      if (mapObj[s[i]] !== t[i]) {
+        return false;
+      }
+    }
+  }
+  return true;
+
+};
+
+function freqCounter(str) {
+  let counter = {};
+  for (let char of str) {
+
+    if (!(char in counter)) {
+      counter[char] = 1;
+    } else {
+      counter[char]++;
+    }
+  }
+  return counter;
+}

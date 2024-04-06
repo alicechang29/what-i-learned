@@ -47,10 +47,39 @@ function double(arr){
 ```
 
 ### .map
+- automatically iterates over an array instead of having to write a for loop
 
 - ***Returns a new array*** of the values returned in the callback
 
 ```js
+//given an array, add 1 to each number
+
+//old way (with loop)
+
+function addOne(nums){
+    let output = [];
+    for(let num of nums){
+        output.push(num+1);
+    }
+    return output;
+}
+
+//new way (with .map)
+
+function addOne(num){
+    return num+1;
+}
+
+let arr = [1,2,3,4,5]
+let newValues = arr.map(addOne); //[2,3,4,5,6]
+
+
+```
+
+```js
+
+//this is .map with an in-line function
+
 let tripledValues = arr.map(function(val,index,arr){
     return val*3;
 });
@@ -73,7 +102,8 @@ doubleArray([2,4]); // [4,8]
 ### .filter
 
 -  inside the callback you must return an expression that evaluates to true or false.
-    - if the expression evalutes to true, it will be included in the new array
+
+- if the expression evalutes to true, it will be included in the new array
 
 ```js
 let arr = [1,2,3,4];
@@ -108,4 +138,38 @@ function hasOnlyOddNumbers(arr) {
     return val % 2 !== 0;
   });
 }
+```
+
+### .reduce
+[reduce-method: Oden](https://www.theodinproject.com/lessons/foundations-object-basics#intermediateadvanced-array-magic)
+
+- Takes an array and returns a single value
+
+Arguments taken in:
+1. Accumulator - the current vavlue of the result at **that point in the loop**
+- the first time through, this value will be set to the **initial value**
+2. Current Value - the item that is currently being iterated on
+
+```js
+let arr = [1,2,3,4,5];
+
+function findEvens(num){
+  if(num % 2 === 0){
+    return true;
+  }
+  return false;
+}
+
+function tripleVal(num){
+  return num * 3;
+}
+
+let evens = arr.filter(findEvens); //2,4
+
+let tripled = evens.map(tripleVal);
+
+let tripledEvens = tripled.reduce(function(total, currentItem){
+  return total += currentItem;
+}, 0);
+
 ```

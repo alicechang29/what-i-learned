@@ -1,0 +1,23 @@
+body{
+  color: black;
+}
+
+table{
+  border-style:solid;
+}
+
+td {
+  border: 1px solid black;
+  text-align: center;
+}
+
+form{
+  border: 1px solid black;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+form > * {
+  margin: 10px;
+}
