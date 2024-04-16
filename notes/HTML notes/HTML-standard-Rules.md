@@ -1,0 +1,1 @@
+- To be explicit about where something will be, put it in the HTML file instead of adding it via the DOM

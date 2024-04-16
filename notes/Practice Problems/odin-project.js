@@ -1,3 +1,5 @@
+
+
 /*
 Write a constructor for making “Book” objects. We will revisit this in the project at the end of this lesson.
 Your book objects should have the book’s title, author, the number of pages, and whether or not you have read the book.
@@ -22,6 +24,6 @@ function bookInfo(title, author, pages, readStatus) {
   };
 }
 
-const theHobbit = new bookInfo("The Hobbit", "JRR", 294, "read");
 
+const theHobbit = new bookInfo("The Hobbit", "JRR", 294, "read");
 console.log(theHobbit.info()); // The Hobbit by JRR, 294 pages, read

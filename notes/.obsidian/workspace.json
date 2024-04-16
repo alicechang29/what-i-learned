@@ -13,13 +13,26 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Practice Problems/Functions,Closures,Timers,Callbacks.md",
+                "file": "Javascript Notes/this.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "f55caee5e2a7a2f9",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Javascript Notes/this.md",
                 "mode": "source",
                 "source": false
               }
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -69,7 +82,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300
+    "width": 200
   },
   "right": {
     "id": "45500d33387546b5",
@@ -85,7 +98,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Practice Problems/Functions,Closures,Timers,Callbacks.md",
+                "file": "Javascript Notes/this.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +115,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Practice Problems/Functions,Closures,Timers,Callbacks.md",
+                "file": "Javascript Notes/this.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +138,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Practice Problems/Functions,Closures,Timers,Callbacks.md"
+                "file": "Javascript Notes/this.md"
               }
             }
           }
@@ -146,8 +159,23 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "ff4f0aaf0e28d8cc",
+  "active": "f55caee5e2a7a2f9",
   "lastOpenFiles": [
+    "Algorithms/Big-O Notation.md",
+    "Algorithms/Big-O Notation",
+    "md - Cheatsheet",
+    "Style guide.md",
+    "Javascript Notes/Style guide.md",
+    "HTML notes/HTML-standard-Rules.md",
+    "Javascript Notes/JS Style Guide.md",
+    "Javascript Notes/this.md",
+    "Javascript Notes/object-constructors.md",
+    "Javascript Notes/timers.md",
+    "Javascript Notes/Sets.md",
+    "Javascript Notes/Functions.md",
+    "Javascript Notes/DOM.md",
+    "Javascript Notes/callbacks.md",
+    "Practice Problems/Functions,Closures,Timers,Callbacks.md",
     "Javascript Notes/Array-Methods.md",
     "Algorithms/ConvertBinaryToDecimal.md",
     "Algorithms/Binary-Search.md",
@@ -155,8 +183,6 @@
     "Algorithms/binaryToDecimal.png",
     "Algorithms/image.png",
     "Practice Problems/leetcodes.js",
-    "Javascript Notes/Sets.md",
-    "Javascript Notes/Functions.md",
     "Javascript Notes/Array Methods",
     "Javascript Notes",
     "Algorithms/How to Convert Binary to Decimal",
@@ -165,13 +191,10 @@
     "Sets.md",
     "Array Methods",
     "Functions.md",
-    "Practice Problems/Functions,Closures,Timers,Callbacks.md",
     "Practice Problems/Closure Exercises.md",
-    "Practice Problems",
     "Welcome.md",
     "Invoking a function.md",
     "invoked.md",
-    "Cheatsheet",
     "test.md"
   ]
 }
