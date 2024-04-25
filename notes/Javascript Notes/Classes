@@ -1,0 +1,3 @@
+# Learnings
+- to call a method from another class without making an instance of that class, can do it Class.method() IF that method is a static method
+    - see populateCategoryData method -- data variable from web-dev2 jeopardy
