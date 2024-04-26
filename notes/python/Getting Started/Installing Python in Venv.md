@@ -1,6 +1,6 @@
 # Setup and Testing for Python Projects
 
-## Setting Up Virtural Environment
+## Setting Up Virtual Environment
 - Initial setup is same for Python, Flask, Jinja
 
 1. cd into project directory
@@ -21,6 +21,8 @@ my_dir $ source venv/bin/activate
 (venv) my_dir $ git status
 
 (venv) my_dir $ pip3 install flask-debugtoolbar
+
+pip3 install "flask-debugtoolbar==0.14.1"
 
 ```
 
