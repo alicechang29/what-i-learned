@@ -17,8 +17,7 @@ DO NOT ALTER CODE IN MIDDLE OF DEBUGGING
 
 **Python Debugger** 
 - built into the language 
-- add a break point right into the code 
-- 
+- add a break point right into the code  
 
 ```python
 

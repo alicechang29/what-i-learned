@@ -25,32 +25,61 @@ def some_route():
     return
 ```
 
-3. To get value out of a session
+##### Choose a method to get values out of a session 
+- Pick based on what I need to return -- Error or None if value doesn't exist 
+
+3. **To get value out of a session**: **Dictionary**
+- Treating session as a dictionary: 
+	- if the value doesn't exist, it will **ERROR** 
+	- This is good if you need a value and need to know it is missing 
 ```python
 @app.get('/')
 def my_route():
     return {session['fav-num']}
 ```
 
-#### Can also use `session.get()`
-- session.get() is referencing the RESPONSE object which contains:
-    - status code, headers, content about the response
+ 4. **To get a value out of a session:** `session.get()`
+- `session.get()` if the value doesn't exist, it will return **NONE**
+	- This is good for following up with **IF/ELSE Statements** 
 
 see flask-survey (4/25/24)
 ```python
 RESPONSES_KEY = "responses"
 
-@app.get("/questions/<question_index>")
-def show_question(question_index):
-    """
-    Displays the current survey question
-    """
-    #Getting the values out of responses variable
-    #Can see in flask debugger > Request Vars > Session Variables
-    responses = session.get(RESPONSES_KEY)
+@app.get("/questions/<int:qid>")
+
+def show_question(qid):
+
+"""Display current question."""
+
+responses = session.get(RESPONSES_KEY)
+
+  
+if responses is None:
+# trying to access question page too soon
+return redirect("/")
+
+  
+
+if len(responses) == len(survey.questions):
+# They've answered all the questions! Thank them.
+return redirect("/complete")
+
+  
+
+if len(responses) != qid:
+# Trying to access questions out of order.
+flash(f"Invalid question id: {qid}.")
+return redirect(f"/questions/{len(responses)}")
+
+  
+question = survey.questions[qid]
+
+return render_template(
+
+"question.jinja", question_num=qid, question=question)
 
 ```
-notes/python/Flask/sessionsget.png
 
 
 

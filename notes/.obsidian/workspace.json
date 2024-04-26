@@ -25,7 +25,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "python/Flask/GET and POST.md",
+                "file": "python/Flask/Sessions.md",
                 "mode": "source",
                 "source": false
               }
@@ -98,7 +98,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "python/Flask/GET and POST.md",
+                "file": "python/Flask/Sessions.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -115,7 +115,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "python/Flask/GET and POST.md",
+                "file": "python/Flask/Sessions.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -138,7 +138,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "python/Flask/GET and POST.md"
+                "file": "python/Flask/Sessions.md"
               }
             }
           }
@@ -161,13 +161,13 @@
   },
   "active": "f55caee5e2a7a2f9",
   "lastOpenFiles": [
-    "python/Flask/Debugging.md",
     "python/Flask/sessionsget.png",
-    "python/Flask/image.png",
+    "python/Flask/GET and POST.md",
+    "python/Flask/Debugging.md",
     "python/Flask/Sessions.md",
+    "python/Flask/image.png",
     "python/Getting Started/Installing Python in Venv.md",
     "python/Debugging.md",
-    "python/Flask/GET and POST.md",
     "python/python syntax/Python Syntax.md",
     "python/Flask",
     "python/python syntax",
@@ -199,7 +199,6 @@
     "Algorithms/binaryToDecimal.png",
     "Algorithms/image.png",
     "Sets.md",
-    "Functions.md",
-    "Practice Problems/Closure Exercises.md"
+    "Functions.md"
   ]
 }
