@@ -25,14 +25,26 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "python/Flask/Sessions.md",
+                "file": "python/Python Testing.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "89dfa72a0c296c1c",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "SQL/database.md",
                 "mode": "source",
                 "source": false
               }
             }
           }
         ],
-        "currentTab": 1
+        "currentTab": 2
       }
     ],
     "direction": "vertical"
@@ -98,7 +110,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "python/Flask/Sessions.md",
+                "file": "SQL/database.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -115,7 +127,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "python/Flask/Sessions.md",
+                "file": "SQL/database.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -138,7 +150,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "python/Flask/Sessions.md"
+                "file": "SQL/database.md"
               }
             }
           }
@@ -159,16 +171,23 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "f55caee5e2a7a2f9",
+  "active": "89dfa72a0c296c1c",
   "lastOpenFiles": [
-    "python/Flask/sessionsget.png",
-    "python/Flask/GET and POST.md",
-    "python/Flask/Debugging.md",
-    "python/Flask/Sessions.md",
-    "python/Flask/image.png",
+    "SQL/SQL-querying.md",
+    "SQL/database.md",
     "python/Getting Started/Installing Python in Venv.md",
+    "SQL/Database",
+    "SQL",
+    "python/Python Testing.md",
+    "python/Python Syntax.md",
+    "Questions.md",
+    "python/Flask/Debugging.md",
+    "python/Flask/GET and POST.md",
+    "python/Flask/Sessions.md",
+    "python/Untitled",
+    "python/Flask/sessionsget.png",
+    "python/Flask/image.png",
     "python/Debugging.md",
-    "python/python syntax/Python Syntax.md",
     "python/Flask",
     "python/python syntax",
     "python/Jinja",
@@ -178,11 +197,8 @@
     "Javascript Notes/Array-Methods.md",
     "python",
     "Javascript Notes/Classes",
-    "HTML notes/JS-Classes.js",
     "Javascript Notes/this.md",
     "Algorithms/Big-O Notation.md",
-    "Algorithms/Big-O Notation",
-    "md - Cheatsheet",
     "Style guide.md",
     "Javascript Notes/Style guide.md",
     "HTML notes/HTML-standard-Rules.md",
@@ -195,10 +211,7 @@
     "Javascript Notes/callbacks.md",
     "Practice Problems/Functions,Closures,Timers,Callbacks.md",
     "Algorithms/ConvertBinaryToDecimal.md",
-    "Algorithms/Binary-Search.md",
     "Algorithms/binaryToDecimal.png",
-    "Algorithms/image.png",
-    "Sets.md",
-    "Functions.md"
+    "Algorithms/image.png"
   ]
 }

@@ -20,9 +20,7 @@ my_dir $ source venv/bin/activate
 
 (venv) my_dir $ git status
 
-(venv) my_dir $ pip3 install flask-debugtoolbar
-
-pip3 install "flask-debugtoolbar==0.14.1"
+(venv) my_dir $ pip3 install "flask-debugtoolbar==0.14.1"
 
 ```
 
@@ -90,4 +88,16 @@ $ flask run -p 5001
 
 ```shell
 my_dir $ python3 -m doctest -v [filename.py]
+```
+
+
+## Testing in iPython 
+1. Navigate to same directory that the file is in 
+2. Open ipython 
+
+```shell
+my_dir $ ipython 
+
+from [file] import [Class]
+from calculator import Calculator 
 ```
