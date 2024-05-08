@@ -10,7 +10,7 @@ SELECT COUNT(*) FROM posts;
 SELECT num_likes / 2 FROM posts;
 ```
 - SELECT statements have subclauses, which are performed in this order:
-1. FROM
+1. FROM (includes joins)
 2. WHERE
 3. GROUP BY
 4. HAVING
@@ -170,7 +170,78 @@ SELECT *
 - can be used to combine records together to extract data
 - common aggregates: COUNT, AVG, SUM, MIN, MAX
 
+**NOTE:**
+- `COUNT(*)` will count ALL records
+- `COUNT(pub_date)` will count all values with a Non-Null value
 
+# NULL
+- Null means **UNKNOWN** (not empty, not undefined)
+- schema for the table controls which columns can allow NULL values
+- In SQL, it uses ternary logic, not binary logic (JS)
+    - things evaluate to true, false, null
+- **Anything that involves `null` will have an answer of `null`**
+    - If one of the values is `null` and trying to concatenate a string together that includes a `null` value is `null`
+- To check if something is `null`
+    - `SELECT * FROM t WHERE mname IS NULL`
+- a string value that is "empty", and is a KNOWN value, set it to empty string `''`
+- a number that is KNOWN to be "free", set it to `0`
+
+
+# Modifying Data
+
+## INSERT
+
+- insert values into table
+```sql
+INSERT INTO posts (title, author) VALUES
+  ('Why We Teach Python', 'Matt'),
+  ('Debugging in Chrome', 'Nate');
+```
+
+- can copy data from another table and insert into the table
+```sql
+INSERT INTO posts (title, author)
+  SELECT title, author
+  FROM some_other_table;
+```
+
+## UPDATE
+- need to specify which record using **WHERE**
+- if unspecified WHERE, will modify ALL posts
+
+```sql
+UPDATE posts SET author = 'Matt' WHERE post_id = 2;
+```
+
+## DELETE
+- delete a record using **WHERE**
+- if unspecified WHERE, will delete ALL posts
+
+```sql
+DELETE FROM posts WHERE post_id = 3;
+```
+
+# Transactions
+- SQL statements normally run immediately
+    - immediately deleting, updating in DB
+    - no way to undo changes
+- Instead, can work in a **transaction** instead of immediately committing changes
+    - changes made in transaction are limited to that transaction, not saved for others until you commit them
+- Good for able to roll back from accidental deletions/updates
+- Good for ensuring operations are atomic:
+    -
+
+
+```sql
+BEGIN; --starts a transaction
+
+DELETE FROM posts WHERE post_id > 8;
+
+ROLLBACK; --reverts changes
+
+COMMIT; -- makes changes permanent
+
+```
 
 
 

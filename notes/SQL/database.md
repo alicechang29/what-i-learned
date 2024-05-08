@@ -53,11 +53,11 @@ ctrl-D to get out of database
 1. `psql [database]` enter the database
 2. To get all the tables within a database: `\dt`
 3. to view schema of table, use `\d [tablename]`
-    - schema defines the structure of the data it can hold
+    - **schema defines the structure of the data it can hold**
     - data type , all columns, nullable (not null - indicates required), default values
 
 
-# SQL 
+# SQL
 
 ```sql
 SELECT title, pub_data
@@ -71,13 +71,16 @@ SELECT title, pub_data
 - strings must be within SINGLE QUOTES
 - Keywords written in ALL CAPS
 
-Types of SQL Statements
+**Types of SQL Statements**
 - DML: Data manipulation language
     - commands to create, read, modify, delete data
     - SELECT, INSERT, UPDATE, DELETE
+    - foreign key constraints affect behavior
+
 - DDL: Data Definition Language
     - create/delete tables, and modify schemas
     - CREATE TABLE, ALTER TABLE, DROP TABLE
+    - specify foreign key constraints
 
 **SELECT queries**
 - query results have rows
@@ -137,6 +140,7 @@ Exporting to CSV
 
 Exporting to JSON
 `blog=# \copy (SELECT json_agg(posts) FROM posts) TO 'posts.json'`
+
 
 
 
