@@ -113,7 +113,10 @@ function parseFormData() {
 }
 ```
 
-
+## Managing Form Actions 
+- With Post routes, need to define the method 
+- With Get and Post routes, need to only define the method on the route itself when the form is "validated on submit" 
+	- Otherwise, if the post method is on the HTML as well, it will always POST rather than GET first. Causes weird side effects. 
 
 
 # Communication between Flask server and API / Databases 
