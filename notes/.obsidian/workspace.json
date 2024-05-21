@@ -8,87 +8,31 @@
         "type": "tabs",
         "children": [
           {
-            "id": "6fece2def06aadb2",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "python/Warbler.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "387d18e1631c8595",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Debugging Process.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "aa087221e1d774f2",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Building Full Stack Web App with API's.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "c482502297cdaf29",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "python/Testing Cheatsheet.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "daef8b453f26bab3",
-            "type": "leaf",
-            "state": {
-              "type": "image",
-              "state": {
-                "file": "python/Screenshot 2024-05-03 at 9.49.30 AM.png"
-              }
-            }
-          },
-          {
-            "id": "4bc83bf0aafc3417",
-            "type": "leaf",
-            "state": {
-              "type": "image",
-              "state": {
-                "file": "python/Screenshot 2024-05-03 at 9.49.30 AM.png"
-              }
-            }
-          },
-          {
-            "id": "231083d4b3239a65",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Javascript Notes/Setup, Testing Cheatsheet.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
             "id": "c2b8a50b6fc6eea2",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Javascript Notes/Express.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "04e46a8a95719171",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Javascript Notes/Express - JSON Web Tokens for Authentication.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "ec72ae697593b7c2",
             "type": "leaf",
             "state": {
               "type": "markdown",
@@ -100,7 +44,7 @@
             }
           }
         ],
-        "currentTab": 7
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -166,7 +110,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Javascript Notes/Express.md",
+                "file": "Javascript Notes/Express - JSON Web Tokens for Authentication.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -183,7 +127,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Javascript Notes/Express.md",
+                "file": "Javascript Notes/Express - JSON Web Tokens for Authentication.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -206,7 +150,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Javascript Notes/Express.md"
+                "file": "Javascript Notes/Express - JSON Web Tokens for Authentication.md"
               }
             }
           }
@@ -227,23 +171,30 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "c2b8a50b6fc6eea2",
+  "active": "04e46a8a95719171",
   "lastOpenFiles": [
-    "Javascript Notes/Node.md",
-    "Javascript Notes/Posgres with Node and Express.md",
-    "Javascript Notes/Express.md",
     "Javascript Notes/Setup, Testing Cheatsheet.md",
+    "Javascript Notes/Posgres with Node and Express.md",
+    "Javascript Notes/Express - JSON Web Tokens for Authentication.md",
+    "Screenshot 2024-05-20 at 2.10.01 PM.png",
+    "Javascript Notes/Express.md",
+    "Javascript Notes/Node.md",
+    "SQL/database.md",
+    "Javascript Notes/DB OO Design Patterns.md",
+    "Building Full Stack Web App with API's.md",
+    "Javascript Notes/Notes/Array-Methods.md",
+    "SQL/SQL-querying.md",
+    "Javascript Notes/Notes/DOM.md",
+    "Debugging Process.md",
+    "Deployment Process with Render.md",
+    "Style guide.md",
     "python/Flask/sessionsget.png",
     "python/Flask/Sessions.md",
     "python/Flask/Flask g (global object).md",
     "python/Flask/GET and POST.md",
-    "Debugging Process.md",
     "python/User Authentication and Authorization.md",
-    "Style guide.md",
     "python/Screenshot 2024-05-03 at 9.49.30 AM.png",
     "python/Screenshot 2024-05-06 at 10.18.09 PM.png",
-    "Deployment Process with Render.md",
-    "Building Full Stack Web App with API's.md",
     "python/Warbler.md",
     "python/Testing Cheatsheet.md",
     "Javascript Notes/Notes",
@@ -253,13 +204,6 @@
     "python/Screenshot 2024-05-07 at 10.14.30 PM.png",
     "python/Python Testing.md",
     "python/Getting Started/Installing Python in Venv.md",
-    "Javascript Notes/Notes/DOM.md",
-    "Javascript Notes/Notes/Array-Methods.md",
-    "Javascript Notes/Notes/Functions.md",
-    "python/Flask/Debugging.md",
-    "SQL/sql alchemy.md",
-    "SQL/SQL-querying.md",
-    "Javascript Notes/Notes/this.md",
     "SQL/Database",
     "SQL",
     "python/Untitled",

@@ -197,3 +197,10 @@ When you’re finished, **Control-C to stop running the server in the debug te
     - What creating successfully looks like
     - What happens when you create a duplicate cat
     - What happens when you are missing required data
+
+
+
+# Middleware
+- purpose of middleware is that it can be applied to a lot of different routes 
+	- "is there an advantage to writing it this way?"
+- by putting a search query into a middleware function, it makes it difficult to determine what the route is doing  

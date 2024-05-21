@@ -4,9 +4,11 @@
 3. `npm install pg`
 
 # Setup DB
+
 1. createdb [db name]
-2. psql [table name ]
-3. when querying db, need to **async/await** 
+2. Feed in name of SQL file: `psql -f lunchly.sql lunchly`
+3. psql [table name ]
+4. when querying db, need to **async/await** 
 ```javascript
 router.get("/", async function (req, res, next) {
   const results = await db.query(    
@@ -137,6 +139,34 @@ afterAll(async function () {
 });
 ```
 
+
+## Test Getting All Values 
+
+``` javascript
+/** GET / : get all values */
+test("/", async function () {
+	const resp = await request(app).get("/users");
+	expect(resp.body).toEqual({
+		users: [
+		{ id: testUser.id, name: "Test", type: "tst" },
+		],
+	});
+});
+```
+
+## Test Getting A Single Value
+
+```javascript
+
+test("GET /messages/:id", async function () {
+	const resp = await request(app).get(`/messages/${testMsg1.id}`);
+		expect(resp.body).toEqual({
+	message: {
+		id: testMsg1.id, msg_content: "Hello", tags ["JavaScript","Python"],
+	},
+	});
+});
+```
 
 ## Testing Create 
 

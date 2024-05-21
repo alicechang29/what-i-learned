@@ -1,6 +1,31 @@
 # How to start up Node console 
 - remember to export what I want out from the file 
 
+# HOW TO MAKE AN INSTANCE INSIDE NODE 
+
+1. **In file**
+```shell
+
+export default Customer;
+```
+
+2. **IN NODE** 
+```node 
+const Customer = await import("./models/customer.js");
+
+const customer = Customer.default;
+
+const customerDetails = {firstName: "alice", lastName: "chang", phone: 123}
+
+const randoPerson = new customer ( customerDetails );  
+```
+
+
+
+
+
+
+--- 
 **In REPL**
 ```javascript
 const fs = await import('fs/promises');
