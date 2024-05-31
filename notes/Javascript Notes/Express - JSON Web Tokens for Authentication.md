@@ -359,3 +359,11 @@ describe("GET /secret failure", function () {
   });
 });
 ```
+
+
+## Creating Seed file with Bcrypt 
+1. npm i bcrypt 
+2. node 
+3. cont bcrypt = await import ("bcrypt")
+4. await bcrypt.hash("password",1)
+	1. insert the hashed password into the db 

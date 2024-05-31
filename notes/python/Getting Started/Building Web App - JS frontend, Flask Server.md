@@ -182,6 +182,9 @@ WTF Forms can also be used for form validation as a class
 	- can check element console to see what those are 
 
 
+**TO ADD:** 
+- DB management - SQL Alchemy 
+- Creating routes - Flask 
 
 # Testing Strategies Flask Python 
 

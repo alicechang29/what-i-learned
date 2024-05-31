@@ -4,40 +4,28 @@
     "type": "split",
     "children": [
       {
-        "id": "22ac303fc1cd9374",
+        "id": "4e4e125f542b860f",
         "type": "tabs",
         "children": [
           {
-            "id": "c2b8a50b6fc6eea2",
+            "id": "fd41b84df8a289a2",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Javascript Notes/Express.md",
+                "file": "React/Getting Started.md",
                 "mode": "source",
                 "source": false
               }
             }
           },
           {
-            "id": "04e46a8a95719171",
+            "id": "83c27303a763637f",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Javascript Notes/Express - JSON Web Tokens for Authentication.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "ec72ae697593b7c2",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Javascript Notes/Express.md",
+                "file": "TODO app.md",
                 "mode": "source",
                 "source": false
               }
@@ -94,7 +82,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 200
+    "width": 233.5
   },
   "right": {
     "id": "45500d33387546b5",
@@ -110,7 +98,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Javascript Notes/Express - JSON Web Tokens for Authentication.md",
+                "file": "TODO app.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -127,7 +115,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Javascript Notes/Express - JSON Web Tokens for Authentication.md",
+                "file": "TODO app.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -150,7 +138,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Javascript Notes/Express - JSON Web Tokens for Authentication.md"
+                "file": "TODO app.md"
               }
             }
           }
@@ -171,49 +159,51 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "04e46a8a95719171",
+  "active": "83c27303a763637f",
   "lastOpenFiles": [
+    "React/Getting Started.md",
+    "TODO app.md",
+    "Javascript Notes/Mocking.md",
+    "React/React Testing Tips.md",
+    "React/React Docstrings.md",
+    "React/React Event and States.md",
     "Javascript Notes/Setup, Testing Cheatsheet.md",
-    "Javascript Notes/Posgres with Node and Express.md",
-    "Javascript Notes/Express - JSON Web Tokens for Authentication.md",
-    "Screenshot 2024-05-20 at 2.10.01 PM.png",
-    "Javascript Notes/Express.md",
     "Javascript Notes/Node.md",
-    "SQL/database.md",
-    "Javascript Notes/DB OO Design Patterns.md",
-    "Building Full Stack Web App with API's.md",
-    "Javascript Notes/Notes/Array-Methods.md",
-    "SQL/SQL-querying.md",
-    "Javascript Notes/Notes/DOM.md",
-    "Debugging Process.md",
-    "Deployment Process with Render.md",
     "Style guide.md",
+    "Javascript Notes/Building Express App.md",
+    "Screenshot 2024-05-26 at 12.48.07 PM.png",
+    "Screenshot 2024-05-20 at 2.10.01 PM.png",
+    "python/Getting Started/User Authentication and Authorization.md",
+    "python/Getting Started/Python Testing.md",
+    "python/Getting Started/Installing Python in Venv.md",
+    "python/Getting Started/Building Web App - JS frontend, Flask Server.md",
+    "Debugging Process.md",
+    "Boilerplates inspo.md",
+    "Javascript Notes/DB OO Design Patterns.md",
+    "Javascript Notes/Express.md",
+    "Javascript Notes/Express - JSON Web Tokens for Authentication.md",
+    "Javascript Notes/Posgres with Node and Express.md",
+    "React",
+    "python/Getting Started/Python Syntax.md",
+    "python/random",
+    "python/random.md",
+    "python/random/Warbler.md",
+    "python/Getting Started/Testing Cheatsheet.md",
+    "python/random/Screenshot 2024-05-07 at 10.14.30 PM.png",
+    "python/random/Screenshot 2024-05-06 at 10.18.09 PM.png",
+    "python/random/Screenshot 2024-05-03 at 9.49.30 AM.png",
+    "python/flask-1 - solution questions.md",
     "python/Flask/sessionsget.png",
     "python/Flask/Sessions.md",
-    "python/Flask/Flask g (global object).md",
-    "python/Flask/GET and POST.md",
-    "python/User Authentication and Authorization.md",
-    "python/Screenshot 2024-05-03 at 9.49.30 AM.png",
-    "python/Screenshot 2024-05-06 at 10.18.09 PM.png",
-    "python/Warbler.md",
-    "python/Testing Cheatsheet.md",
     "Javascript Notes/Notes",
-    "rithm/VS-devTools.md",
-    "Study hall.md",
-    "Questions.md",
-    "python/Screenshot 2024-05-07 at 10.14.30 PM.png",
-    "python/Python Testing.md",
-    "python/Getting Started/Installing Python in Venv.md",
     "SQL/Database",
     "SQL",
-    "python/Untitled",
     "python/Flask/image.png",
     "python/Flask",
     "python/python syntax",
     "python/Jinja",
     "python/Flask",
     "python/Getting Started",
-    "python",
     "Algorithms/binaryToDecimal.png",
     "Algorithms/image.png"
   ]

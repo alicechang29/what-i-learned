@@ -21,3 +21,15 @@
 
 ## Python 
 - lower_snake_case 
+
+
+### React 
+
+- components - start with capital letter 
+- react events are camelCase 
+```jsx
+<button onClick={activateLasers}>
+  Activate Lasers
+</button>
+```
+
