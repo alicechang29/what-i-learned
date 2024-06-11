@@ -25,14 +25,38 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "TODO app.md",
+                "file": "React/React Context.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "396b1e4a08747ccb",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "SQL/database.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "1648edddcfe640a0",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Typescript/Setup.md",
                 "mode": "source",
                 "source": false
               }
             }
           }
         ],
-        "currentTab": 1
+        "currentTab": 3
       }
     ],
     "direction": "vertical"
@@ -82,7 +106,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 233.5
+    "width": 200
   },
   "right": {
     "id": "45500d33387546b5",
@@ -98,7 +122,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "TODO app.md",
+                "file": "Typescript/Setup.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -115,7 +139,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "TODO app.md",
+                "file": "Typescript/Setup.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -138,7 +162,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "TODO app.md"
+                "file": "Typescript/Setup.md"
               }
             }
           }
@@ -159,42 +183,44 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "83c27303a763637f",
+  "active": "1648edddcfe640a0",
   "lastOpenFiles": [
-    "React/Getting Started.md",
-    "TODO app.md",
-    "Javascript Notes/Mocking.md",
-    "React/React Testing Tips.md",
-    "React/React Docstrings.md",
-    "React/React Event and States.md",
-    "Javascript Notes/Setup, Testing Cheatsheet.md",
-    "Javascript Notes/Node.md",
-    "Style guide.md",
+    "python/Getting Started/Building Web App - JS frontend, Flask Server.md",
+    "Typescript/Setup.md",
+    "SQL/database.md",
+    "Typescript",
     "Javascript Notes/Building Express App.md",
+    "React/React \"useEffect\".md",
+    "React/React Context.md",
+    "Javascript Notes/Notes/Array-Methods.md",
+    "Project Checklist & Bug List.md",
+    "Javascript Notes/Posgres with Node and Express.md",
+    "Javascript Notes/Express.md",
+    "React/Getting Started.md",
+    "React/React Router.md",
+    "Javascript Notes/Setup, Testing Cheatsheet.md",
+    "React/React Event and States.md",
+    "React/React Testing Tips.md",
+    "React/TODO app.md",
+    "React/React Docstrings.md",
+    "React/Async Await with DOM updates.md",
+    "Javascript Notes/Node.md",
+    "Pasted image 20240531164516.png",
+    "Javascript Notes/Mocking.md",
+    "Style guide.md",
     "Screenshot 2024-05-26 at 12.48.07 PM.png",
     "Screenshot 2024-05-20 at 2.10.01 PM.png",
     "python/Getting Started/User Authentication and Authorization.md",
     "python/Getting Started/Python Testing.md",
     "python/Getting Started/Installing Python in Venv.md",
-    "python/Getting Started/Building Web App - JS frontend, Flask Server.md",
     "Debugging Process.md",
     "Boilerplates inspo.md",
-    "Javascript Notes/DB OO Design Patterns.md",
-    "Javascript Notes/Express.md",
-    "Javascript Notes/Express - JSON Web Tokens for Authentication.md",
-    "Javascript Notes/Posgres with Node and Express.md",
     "React",
-    "python/Getting Started/Python Syntax.md",
     "python/random",
-    "python/random.md",
-    "python/random/Warbler.md",
-    "python/Getting Started/Testing Cheatsheet.md",
     "python/random/Screenshot 2024-05-07 at 10.14.30 PM.png",
     "python/random/Screenshot 2024-05-06 at 10.18.09 PM.png",
     "python/random/Screenshot 2024-05-03 at 9.49.30 AM.png",
-    "python/flask-1 - solution questions.md",
     "python/Flask/sessionsget.png",
-    "python/Flask/Sessions.md",
     "Javascript Notes/Notes",
     "SQL/Database",
     "SQL",
@@ -203,7 +229,6 @@
     "python/python syntax",
     "python/Jinja",
     "python/Flask",
-    "python/Getting Started",
     "Algorithms/binaryToDecimal.png",
     "Algorithms/image.png"
   ]

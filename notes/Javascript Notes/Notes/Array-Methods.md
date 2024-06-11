@@ -1,4 +1,4 @@
-****## Array Methods
+
 Built in array methods, **iterators**, make it easier to loop through an array.
 
 The parameters for each of these methods is a **callback function** with 3 optional parameters:

@@ -101,6 +101,8 @@ router.patch("/v2/:id", async function (req, res, next) {
 ```
 
 
+# Drop DB 
+`dropdb jobly`
 # Testing the Database 
 
 $ createdb cats_test
