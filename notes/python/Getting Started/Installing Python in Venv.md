@@ -61,6 +61,10 @@ Check if I have all the requirements
 ```shell
 (venv) $ pip3 freeze
 ```
+Freeze all my requirements 
+```
+pip3 freeze > requirements.txt
+```
 
 ## Deactivate Virtual Environment
 
