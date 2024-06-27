@@ -13,7 +13,55 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "python/Getting Started/Installing Python in Venv.md",
+                "file": "Style guide.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "d12407b897af4ad3",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Python/Getting Started/Installing Python in Venv.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "8e911dd80712836b",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Django/Django Tutorial.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "395264451e540af4",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Python/Getting Started/Installing Python in Venv.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "9878d87abe54ade4",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Django/SIS/SIS Story Pointing.md",
                 "mode": "source",
                 "source": false
               }
@@ -69,7 +117,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 381.5
+    "width": 202.5
   },
   "right": {
     "id": "45500d33387546b5",
@@ -85,7 +133,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "python/Getting Started/Installing Python in Venv.md",
+                "file": "Style guide.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +150,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "python/Getting Started/Installing Python in Venv.md",
+                "file": "Style guide.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +173,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "python/Getting Started/Installing Python in Venv.md"
+                "file": "Style guide.md"
               }
             }
           }
@@ -148,51 +196,49 @@
   },
   "active": "43de9141f566f42f",
   "lastOpenFiles": [
-    "python/Flask/Flask - Validate and Test Form Data from Client.md",
-    "python/Getting Started/User Authentication and Authorization.md",
-    "React/Getting Started.md",
-    "React/React Context.md",
-    "SQL/database.md",
-    "Typescript/Setup.md",
-    "python/Getting Started/Building Web App - JS frontend, Flask Server.md",
-    "Screenshot 2024-06-16 at 10.25.01 PM.png",
-    "python/Flask/Sessions.md",
-    "python/Flask/Flask g (global object).md",
-    "python/Flask/Debugging.md",
-    "python/Flask/sessionsget.png",
-    "python/Getting Started/Installing Python in Venv.md",
-    "SQL/sql alchemy.md",
-    "createdb.md",
-    "Style guide.md",
-    "python/Getting Started/Testing Cheatsheet.md",
-    "python/Getting Started/Python Testing.md",
-    "python/Getting Started/Python Syntax.md",
-    "python/Flask/GET and POST.md",
-    "Bug Journal.md",
-    "youtube.md",
+    "How to do Deployments.md",
     "Share B & B.md",
-    "Advice Gathered.md",
-    "Typescript",
+    "lightening talk ideas.md",
+    "My Learnings/Debugging Process.md",
+    "My Learnings/Anti-Bug Checklist.md",
+    "Django/Django Tutorial.md",
+    "My Learnings/Advice Gathered.md",
+    "My Learnings",
+    "Django/SIS",
+    "Django/Django Testing.md",
+    "Django/SIS/SIS - Min Max.md",
+    "Django/SIS/SIS - Lightning Talk Model.md",
+    "Django/SIS/SIS Story Pointing.md",
+    "React/screenshots/Pasted image 20240531164516.png",
+    "React/screenshots",
+    "Javascript Notes/screenshots/Screenshot 2024-06-16 at 10.25.01 PM.png",
+    "Boilerplates inspo.md",
     "Javascript Notes/Building Express App.md",
-    "React/React \"useEffect\".md",
-    "Javascript Notes/Notes/Array-Methods.md",
-    "Project Checklist & Bug List.md",
-    "Pasted image 20240531164516.png",
-    "Screenshot 2024-05-26 at 12.48.07 PM.png",
-    "Screenshot 2024-05-20 at 2.10.01 PM.png",
+    "Javascript Notes/screenshots/Screenshot 2024-05-26 at 12.48.07 PM.png",
+    "Javascript Notes/screenshots/Screenshot 2024-05-20 at 2.10.01 PM.png",
+    "Javascript Notes/screenshots",
+    "Style guide.md",
+    "screenshots",
+    "Javascript Notes/screenshots/Screenshot 2024-06-21 at 2.57.52 PM.png",
+    "Javascript Notes/screenshots/Screenshot 2024-06-21 at 2.41.22 PM.png",
+    "Tell me about yourself.md",
+    "Python/Getting Started/Installing Python in Venv.md",
+    "SQL/database.md",
+    "Django/Django Querying.md",
+    "Django",
+    "SIS Research.md",
+    "createdb.md",
+    "React/Getting Started.md",
+    "Python/Getting Started/Building Web App - JS frontend, Flask Server.md",
+    "Python/Getting Started/Python Testing.md",
+    "Outcomes.md",
+    "Python/Flask/sessionsget.png",
+    "Typescript",
     "React",
-    "python/random",
-    "python/random/Screenshot 2024-05-07 at 10.14.30 PM.png",
-    "python/random/Screenshot 2024-05-06 at 10.18.09 PM.png",
-    "python/random/Screenshot 2024-05-03 at 9.49.30 AM.png",
-    "Javascript Notes/Notes",
-    "SQL/Database",
-    "SQL",
-    "python/Flask/image.png",
-    "python/Flask",
-    "python/python syntax",
-    "python/Jinja",
-    "python/Flask",
-    "Algorithms/binaryToDecimal.png"
+    "Python/random",
+    "Python/random/Screenshot 2024-05-07 at 10.14.30 PM.png",
+    "Python/random/Screenshot 2024-05-06 at 10.18.09 PM.png",
+    "Python/random/Screenshot 2024-05-03 at 9.49.30 AM.png",
+    "Javascript Notes/Notes"
   ]
 }

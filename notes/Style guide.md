@@ -1,14 +1,8 @@
-# Naming Conventions
-
 ## Javascript
 - Classes -- UpperCamelCase
     - `class Player { }`
 - DOM Elements -- $ sign in front
     - `const $announcementArea = document.querySelector("#winner-announcement");`
-
-
-## HTML
-
 
 ## CSS
 - "Component" is named after the class
@@ -20,10 +14,11 @@
 
 
 ## Python 
-- lower_snake_case 
+- variables: lower_snake_case 
+- Classes: UpperCamelCase 
 
 
-### React 
+## React 
 
 - components - start with capital letter 
 - react events are camelCase 
@@ -33,3 +28,7 @@
 </button>
 ```
 
+
+## Typescript 
+- types start with capital letter and letter t 
+	- `tDataType`

@@ -50,9 +50,11 @@ $ psql blog #selecting a database
 
 ctrl-D to get out of database
 
-1. `psql [database]` enter the database
-2. To get all the tables within a database: `\dt`
-3. to view schema of table, use `\d [tablename]`
+`psql [database]` enter the database
+
+To get all the tables within a database: `\dt`
+
+To view schema of table, use `\d [tablename]`
     - **schema defines the structure of the data it can hold**
     - data type , all columns, nullable (not null - indicates required), default values
 

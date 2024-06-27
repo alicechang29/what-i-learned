@@ -1,7 +1,0 @@
-- Jobly - Express app 
-	- models 
-	- routes
-	- authentication 
-	- JSON schema validation 
-	- TESTS 
-- 

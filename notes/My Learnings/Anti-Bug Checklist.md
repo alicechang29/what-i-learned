@@ -20,6 +20,10 @@
 - **DELETE** 
 	- Only authenticated users 
 
+- Testing Views: 
+	- testing if item can still be reached by URL even if not visible 
+	- If date related, test with: past, present, future 
+
 ## Authentication 
 - Auth middleware uses verify, not decode 
 ### Auth Tests 
