@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Style guide.md",
+                "file": "Django/Django Tutorial.md",
                 "mode": "source",
                 "source": false
               }
@@ -133,7 +133,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Style guide.md",
+                "file": "Django/Django Tutorial.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -150,7 +150,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Style guide.md",
+                "file": "Django/Django Tutorial.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -173,7 +173,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Style guide.md"
+                "file": "Django/Django Tutorial.md"
               }
             }
           }
@@ -196,16 +196,17 @@
   },
   "active": "43de9141f566f42f",
   "lastOpenFiles": [
+    "Django/Django Testing.md",
+    "Django/Django Tutorial.md",
+    "Style guide.md",
     "How to do Deployments.md",
     "Share B & B.md",
     "lightening talk ideas.md",
     "My Learnings/Debugging Process.md",
     "My Learnings/Anti-Bug Checklist.md",
-    "Django/Django Tutorial.md",
     "My Learnings/Advice Gathered.md",
     "My Learnings",
     "Django/SIS",
-    "Django/Django Testing.md",
     "Django/SIS/SIS - Min Max.md",
     "Django/SIS/SIS - Lightning Talk Model.md",
     "Django/SIS/SIS Story Pointing.md",
@@ -217,7 +218,6 @@
     "Javascript Notes/screenshots/Screenshot 2024-05-26 at 12.48.07 PM.png",
     "Javascript Notes/screenshots/Screenshot 2024-05-20 at 2.10.01 PM.png",
     "Javascript Notes/screenshots",
-    "Style guide.md",
     "screenshots",
     "Javascript Notes/screenshots/Screenshot 2024-06-21 at 2.57.52 PM.png",
     "Javascript Notes/screenshots/Screenshot 2024-06-21 at 2.41.22 PM.png",

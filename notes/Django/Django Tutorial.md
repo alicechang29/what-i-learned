@@ -41,11 +41,6 @@ fieldsets = [
 ]
 ```
 
-
-Setting Password in PSQL 
-alter user alicechang with password 'password'
-username is the username of my computer 
-
 # Create a View and URL 
 1. Create a view within **polls/views.py** 
 2. Create a URL Pattern for the polls view **polls/urls.py**
