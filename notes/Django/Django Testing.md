@@ -87,3 +87,14 @@ assert response.context['rollup'] == avg_grade
 ```
 https://stackoverflow.com/questions/1058135/django-convert-a-list-back-to-a-queryset
 
+
+# Running Test Errors 
+
+- If see a migration error during testing but the DB columns look correct, need to drop the test DB by running: 
+(don't include the `--keepdb`)
+
+```
+python manage.py test --settings=sis.settings.testing \
+  assessments.tests.test_views \
+```
+

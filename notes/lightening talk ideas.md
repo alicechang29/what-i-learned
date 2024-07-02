@@ -24,3 +24,10 @@ grade=34)
 
 # double underscore is how you walk from assessment session to the id on it (Django thing)
 ```
+
+
+- why to store data as json if it's from an api? 
+- geospatial psql 
+- ideas: go back to warbler and create a DB view to query things more easily 
+	- create a view for people who have more than 3 posts that joined in the past year 
+- build warbler with mongoDB - where consistency isn't as important as speed 

@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Django/Django Tutorial.md",
+                "file": "Django/Django Testing.md",
                 "mode": "source",
                 "source": false
               }
@@ -25,19 +25,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Python/Getting Started/Installing Python in Venv.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "8e911dd80712836b",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Django/Django Tutorial.md",
+                "file": "GraphQL/GraphQL Tutorial.md",
                 "mode": "source",
                 "source": false
               }
@@ -67,7 +55,8 @@
               }
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -117,7 +106,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 202.5
+    "width": 200
   },
   "right": {
     "id": "45500d33387546b5",
@@ -133,7 +122,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Django/Django Tutorial.md",
+                "file": "GraphQL/GraphQL Tutorial.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -150,7 +139,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Django/Django Tutorial.md",
+                "file": "GraphQL/GraphQL Tutorial.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -173,7 +162,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Django/Django Tutorial.md"
+                "file": "GraphQL/GraphQL Tutorial.md"
               }
             }
           }
@@ -194,22 +183,27 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "43de9141f566f42f",
+  "active": "d12407b897af4ad3",
   "lastOpenFiles": [
-    "Django/Django Testing.md",
+    "Python/Getting Started/Installing Python in Venv.md",
+    "Django/SIS/Untitled.md",
+    "Django/SIS/SIS Story Pointing.md",
+    "My Learnings/Anti-Bug Checklist.md",
+    "Django/SIS/SIS - Lightning Talk Model.md",
     "Django/Django Tutorial.md",
+    "Django/Django Testing.md",
+    "GraphQL/GraphQL Tutorial.md",
+    "Pasted image 20240629200902.png",
+    "My Learnings/Advice Gathered.md",
+    "GraphQL",
+    "lightening talk ideas.md",
     "Style guide.md",
     "How to do Deployments.md",
     "Share B & B.md",
-    "lightening talk ideas.md",
     "My Learnings/Debugging Process.md",
-    "My Learnings/Anti-Bug Checklist.md",
-    "My Learnings/Advice Gathered.md",
     "My Learnings",
     "Django/SIS",
     "Django/SIS/SIS - Min Max.md",
-    "Django/SIS/SIS - Lightning Talk Model.md",
-    "Django/SIS/SIS Story Pointing.md",
     "React/screenshots/Pasted image 20240531164516.png",
     "React/screenshots",
     "Javascript Notes/screenshots/Screenshot 2024-06-16 at 10.25.01 PM.png",
@@ -222,7 +216,6 @@
     "Javascript Notes/screenshots/Screenshot 2024-06-21 at 2.57.52 PM.png",
     "Javascript Notes/screenshots/Screenshot 2024-06-21 at 2.41.22 PM.png",
     "Tell me about yourself.md",
-    "Python/Getting Started/Installing Python in Venv.md",
     "SQL/database.md",
     "Django/Django Querying.md",
     "Django",
@@ -237,8 +230,6 @@
     "React",
     "Python/random",
     "Python/random/Screenshot 2024-05-07 at 10.14.30 PM.png",
-    "Python/random/Screenshot 2024-05-06 at 10.18.09 PM.png",
-    "Python/random/Screenshot 2024-05-03 at 9.49.30 AM.png",
-    "Javascript Notes/Notes"
+    "Python/random/Screenshot 2024-05-06 at 10.18.09 PM.png"
   ]
 }

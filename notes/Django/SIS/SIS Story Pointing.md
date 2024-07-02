@@ -1,4 +1,24 @@
 
+### Add blog feature #17
+20 
+
+### Add web sockets to planning poker app #34
+20
+
+### SIS Mobile App #18
+100 
+
+### Ping DRI on slack if lecture not published in time #14
+40 
+
+
+
+
+
+
+
+-------------------------
+
 ### Add Announcement App #12
 8
 

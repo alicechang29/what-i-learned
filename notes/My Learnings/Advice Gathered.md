@@ -27,4 +27,14 @@
 Lightning talk ideas: 
 - performance optimization 
 	- too slow or using too much memory 
-- 
+
+
+
+
+
+EC2 is the amazon service that provides virtual machines (which they call instances).   And again that whole concept is probably not worth your time right now.   But just to give you an idea, the terraform module that we used to create a new environment at MM did approximately these steps (though not exactly in this order because of how the dependencies work):
+
+1. Create an S3 bucket, to hold attachments and files for calcs and stuff
+2. Create an IAM role which has access to the bucket and other AWS things the environment will need.   The same ways you can give an IAM user access to things you can also do with a role, and users who are allowed to can "assume the role", and also other things that run inside AWS can assume the role.
+3. Create the ec2 instance(s) where the services actually run, as well as the apache HTTPD server which hosts the UI files and sits in front of the services, and make it so that anything that runs on that instance is running with that role (within EC2 that is called an instance role)
+4. Configure the DNS entries (in the AWS "route53" service) and load balancer so that the domain names <whatever>.go to the right places
