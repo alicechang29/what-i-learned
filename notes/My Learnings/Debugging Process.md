@@ -7,7 +7,7 @@
 	1. use insomnia to make a request to backend 
 		1. if the error is there, then can rule out the frontend 
 	2. when rendering a template, send all the values to visibly see things 
-4. talk out the problem, how to explain the problem to someone news 
+4. talk out the problem, how to explain the problem to someone new
 5. go outside, make a drawing 
 6. once you "find the bug", determine if it was ACTUALLY the bug 
 	1. did i save the file 
@@ -74,3 +74,44 @@ print("!!!!!return state", {"num": {"fact": fact, "num": num}})
 return {"num": {"fact": fact, "num": num}}
 ```
 1. check terminal to see print statement 
+
+
+
+# Finding Bugs in Complex Code 
+see objectsCompare in dsa- from hw 
+1. test simple cases first to make sure fns are running 
+2. use `it.only` to run 1 test at a time 
+```ts
+
+it.only("works for simple cases", function () {
+
+const a = [1, 2];
+const b = [1, 2];
+expect(objectsCompare(a, b)).toEqual(true);
+
+
+const ao = { a: 1, b: 2 };
+const bo = { a: 1, b: 2 };
+expect(objectsCompare(ao, bo)).toEqual(true);
+
+  
+
+const af = { a: 3, b: 2 };
+const bf = { a: 1, b: 2 };
+expect(objectsCompare(af, bf)).toEqual(false);
+
+  
+
+const ef = [1, 2];
+const ff = [0];
+expect(objectsCompare(ef, ff)).toEqual(false);
+
+});
+```
+
+3. Build up tests to more complex levels 
+4. Run tests one at a time 
+
+## Shell commands for checking tests 
+- inside the test, `u` to update snapshot 
+- `a` to see what tests ran 

@@ -50,12 +50,13 @@ Run `npm install` and then `npm run ...`:
 
 In shell: 
 
-| Package JSON scripts                           | Definiton                                 |
-| ---------------------------------------------- | ----------------------------------------- |
-| `npm run test --[filename]`                    | detect changes in a specific file         |
-| `npm run test -- --run {NAME_OF_TEST_FILE}`    | run test once and return to shell         |
-| `npm run test -- --silent {NAME_OF_TEST_FILE}` | silent option omits logs during test runs |
-| `npm run test`                                 | detects changes in any file               |
+| Package JSON scripts                                                            | Definiton                                 |
+| ------------------------------------------------------------------------------- | ----------------------------------------- |
+| `npm run test --[filename]`                                                     | detect changes in a specific file         |
+| `npm run test -- --run {NAME_OF_TEST_FILE}`                                     | run test once and return to shell         |
+| `npm run test -- --silent {NAME_OF_TEST_FILE}`                                  | silent option omits logs during test runs |
+| `npm run test`                                                                  | detects changes in any file               |
+| **Running tests**: `npm run test` _or:_ `test:cov` \| `test:debug` \| `test:ui` |                                           |
 
 
 **Run a collection of tests**

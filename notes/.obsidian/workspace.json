@@ -8,48 +8,24 @@
         "type": "tabs",
         "children": [
           {
-            "id": "43de9141f566f42f",
+            "id": "bb30eb62186c8ebe",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Django/Django Testing.md",
+                "file": "Data Structures/Linked Lists.md",
                 "mode": "source",
                 "source": false
               }
             }
           },
           {
-            "id": "d12407b897af4ad3",
+            "id": "1a2495a0a6d55035",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "GraphQL/GraphQL Tutorial.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "395264451e540af4",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Python/Getting Started/Installing Python in Venv.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "9878d87abe54ade4",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Django/SIS/SIS Story Pointing.md",
+                "file": "Cron Jobs.md",
                 "mode": "source",
                 "source": false
               }
@@ -122,7 +98,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "GraphQL/GraphQL Tutorial.md",
+                "file": "Cron Jobs.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -139,7 +115,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "GraphQL/GraphQL Tutorial.md",
+                "file": "Cron Jobs.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -162,7 +138,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "GraphQL/GraphQL Tutorial.md"
+                "file": "Cron Jobs.md"
               }
             }
           }
@@ -183,53 +159,53 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "d12407b897af4ad3",
+  "active": "1a2495a0a6d55035",
   "lastOpenFiles": [
-    "Python/Getting Started/Installing Python in Venv.md",
-    "Django/SIS/Untitled.md",
-    "Django/SIS/SIS Story Pointing.md",
-    "My Learnings/Anti-Bug Checklist.md",
-    "Django/SIS/SIS - Lightning Talk Model.md",
-    "Django/Django Tutorial.md",
-    "Django/Django Testing.md",
-    "GraphQL/GraphQL Tutorial.md",
-    "Pasted image 20240629200902.png",
-    "My Learnings/Advice Gathered.md",
-    "GraphQL",
-    "lightening talk ideas.md",
+    "REST API Questions.md",
     "Style guide.md",
+    "Django/Share B & B.md",
+    "Object-Orientation.md",
+    "lightening talk ideas.md",
     "How to do Deployments.md",
-    "Share B & B.md",
+    "Javascript Notes/Notes/Sets.md",
+    "Data Structures/Linked Lists.md",
+    "Data Structures/Recursion.md",
+    "Django/Scripts in Django.md",
+    "Django/Django Tutorial.md",
+    "Typescript/Type Confusions.md",
+    "Typescript/Setup.md",
+    "HTML notes/HTML-standard-Rules.md",
+    "Javascript Notes/Setup, Testing Cheatsheet.md",
+    "My Learnings/Advice Gathered.md",
+    "My Learnings/Anti-Bug Checklist.md",
     "My Learnings/Debugging Process.md",
+    "GraphQL/imgs/Pasted image 20240706195938.png",
+    "GraphQL/imgs",
+    "GraphQL/Untitled.md",
+    "GraphQL/imgs/Pasted image 20240629200902.png",
+    "Data Structures/imgs/Pasted image 20240712110428.png",
+    "Data Structures/System Design Questions.md",
+    "Data Structures/Sorting.md",
+    "Data Structures/imgs/Screenshot 2024-07-08 at 11.20.44 AM.png",
+    "Data Structures/imgs",
+    "Data Structures/imgs/Screenshot 2024-07-08 at 11.20.56 AM.png",
+    "Backend Review.md",
+    "Python/Getting Started/Building Web App - JS frontend, Flask Server.md",
+    "Python/Flask/GET and POST.md",
+    "Python/Flask/Sessions.md",
+    "Python/Flask/Flask g (global object).md",
+    "neetcode/valid_palindrome_125.ts",
+    "neetcode/two_sum_1.ts",
+    "neetcode/anagram_242.ts",
+    "neetcode",
+    "Data Structures",
+    "GraphQL",
     "My Learnings",
     "Django/SIS",
-    "Django/SIS/SIS - Min Max.md",
     "React/screenshots/Pasted image 20240531164516.png",
-    "React/screenshots",
     "Javascript Notes/screenshots/Screenshot 2024-06-16 at 10.25.01 PM.png",
-    "Boilerplates inspo.md",
-    "Javascript Notes/Building Express App.md",
     "Javascript Notes/screenshots/Screenshot 2024-05-26 at 12.48.07 PM.png",
     "Javascript Notes/screenshots/Screenshot 2024-05-20 at 2.10.01 PM.png",
-    "Javascript Notes/screenshots",
-    "screenshots",
-    "Javascript Notes/screenshots/Screenshot 2024-06-21 at 2.57.52 PM.png",
-    "Javascript Notes/screenshots/Screenshot 2024-06-21 at 2.41.22 PM.png",
-    "Tell me about yourself.md",
-    "SQL/database.md",
-    "Django/Django Querying.md",
-    "Django",
-    "SIS Research.md",
-    "createdb.md",
-    "React/Getting Started.md",
-    "Python/Getting Started/Building Web App - JS frontend, Flask Server.md",
-    "Python/Getting Started/Python Testing.md",
-    "Outcomes.md",
-    "Python/Flask/sessionsget.png",
-    "Typescript",
-    "React",
-    "Python/random",
-    "Python/random/Screenshot 2024-05-07 at 10.14.30 PM.png",
-    "Python/random/Screenshot 2024-05-06 at 10.18.09 PM.png"
+    "Javascript Notes/screenshots/Screenshot 2024-06-21 at 2.57.52 PM.png"
   ]
 }

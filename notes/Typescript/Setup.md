@@ -14,7 +14,12 @@ tsconfig.json
 1. `tsc`
 2. `tsc --watch`
 
+Compiling TS file into JS means: 
+1. Compiler will create a JS file based on TS file given 
+2. To add the JS to html, need to name the file as "blah.js"
 
+
+---- 
 ### Basic
 
 Basic setup with a sample test:

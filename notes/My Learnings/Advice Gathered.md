@@ -17,7 +17,10 @@
 
 ## Function Sizes 
 
-- The same ideas also apply to how to break things up into functions.  Your goal is that when someone sees the functions being called in some other code, they do what someone thinks they would do - not more, not less.  But the most important thing is that code is broken into functions which are reusable, and are easy to maintain.  Reuse and maintainability are the entire reason functions exist at all.    Mason and Marc and I (and others) always say that if you find yourself copying and pasting, you probably did something wrong, and that code should be in a function you can call in both places.  I also always say that a good developer is supposed to be lazy - don't write new code, call code you already wrote.   I think you approach it that way, you wind up with functions which are an appropriate size.
+- The same ideas also apply to how to break things up into functions.  Your goal is that when someone sees the functions being called in some other code, they do what someone thinks they would do - not more, not less.  
+- But the most important thing is that code is broken into functions which are reusable, and are easy to maintain.  Reuse and maintainability are the entire reason functions exist at all.   
+- Mason and Marc and I (and others) always say that if you find yourself copying and pasting, you probably did something wrong, and that code should be in a function you can call in both places. 
+- I also always say that a good developer is supposed to be lazy - don't write new code, call code you already wrote.   I think you approach it that way, you wind up with functions which are an appropriate size.
 
 
 # To Learn 
@@ -38,3 +41,11 @@ EC2 is the amazon service that provides virtual machines (which they call instan
 2. Create an IAM role which has access to the bucket and other AWS things the environment will need.   The same ways you can give an IAM user access to things you can also do with a role, and users who are allowed to can "assume the role", and also other things that run inside AWS can assume the role.
 3. Create the ec2 instance(s) where the services actually run, as well as the apache HTTPD server which hosts the UI files and sits in front of the services, and make it so that anything that runs on that instance is running with that role (within EC2 that is called an instance role)
 4. Configure the DNS entries (in the AWS "route53" service) and load balancer so that the domain names <whatever>.go to the right places
+
+
+
+During interview, if you lose the words for a definition, follow up with an example - "Brit"
+
+
+Try to write a function myself (write reduce myself)
+- all of JS can be written in JS 

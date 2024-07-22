@@ -191,6 +191,9 @@ python manage.py test --keepdb --settings=sis.settings.testing \
 
 python manage.py test --keepdb --settings=sis.settings.testing talks
 
+
+python manage.py test --keepdb --settings=sis.settings.testing \lectures.tests.test_models
+
 ```
 
 1. import factories into ipython 
@@ -207,3 +210,13 @@ FakeSubGraded.create_batch(10) #enter number of instances to create
 - see if the values display 
 - check if only staff can see 
 - check student can't see 
+
+
+# Scripts 
+
+When writing a script that needs to import Django models or need to be integrated with Django: 
+1. Create a `scripts` folder within the app 
+2. Add `__init__.py` inside scripts folder 
+3. Add script inside scripts folder 
+4. Add `def run()` function inside the script and call a function 
+5. Go to shell, `manage.py runscript slack_bot`
