@@ -29,3 +29,53 @@ If removing a node
 
 
 ![[Screenshot 2024-07-08 at 11.20.44 AM.png]]![[Screenshot 2024-07-08 at 11.20.56 AM.png]]
+
+# How To Solve 
+
+## Reverse a Linked List (in place)
+
+1. Declare 3 pointers to track current node, prev, next node 
+	1. prev = null 
+	2. curr = head 
+	3. next = head 
+2. Traverse the list 
+	1. If prev = null, then it is the new tail 
+	2. If next = null, then it is the new head 
+	3. Set next = curr.next to track the original next value 
+	4. Set curr.next = to the prev value 
+	5. Set prev = curr value 
+	6. Set curr = next value 
+
+dsa-arrays-linked-lists 
+run test: `npm run test rev-in-place`
+O(n) - traversing entire list 
+
+https://medium.com/outco/reversing-a-linked-list-easy-as-1-2-3-560fbffe2088
+
+```ts
+function reverseInPlace(lst: LLStr): void {
+
+//[1,2,3]
+
+let curr = lst.head; //3
+let prev = null;
+let next = lst.head;
+
+	while (curr !== null) {
+	
+		if (prev === null) lst.tail = curr;
+		next = curr.next; //next = null
+		
+		if (next === null) lst.head = curr;
+		
+		curr.next = prev; //curr.next = 2
+		prev = curr; // prev = 3
+		curr = next; //curr = null
+	
+	}
+	
+console.log("LIST", lst);
+
+}
+```
+

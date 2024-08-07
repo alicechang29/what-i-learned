@@ -8,31 +8,79 @@
         "type": "tabs",
         "children": [
           {
-            "id": "bb30eb62186c8ebe",
+            "id": "551343ecc49a2750",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Data Structures/Linked Lists.md",
+                "file": "Spring/Spring Framework.md",
                 "mode": "source",
                 "source": false
               }
             }
           },
           {
-            "id": "1a2495a0a6d55035",
+            "id": "34d16ab9cd91828d",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Cron Jobs.md",
+                "file": "Git.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "0a835a028f5c3026",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "My Learnings/Bug Stories.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "95173f7b1dd8eed8",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "RESTful API.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "a2e6364187a89352",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "System Design/System Design Questions.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "f1ab1ade3d7bc932",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Git.md",
                 "mode": "source",
                 "source": false
               }
             }
           }
         ],
-        "currentTab": 1
+        "currentTab": 5
       }
     ],
     "direction": "vertical"
@@ -98,7 +146,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Cron Jobs.md",
+                "file": "Git.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -115,7 +163,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Cron Jobs.md",
+                "file": "Git.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -138,7 +186,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Cron Jobs.md"
+                "file": "Git.md"
               }
             }
           }
@@ -159,53 +207,53 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "1a2495a0a6d55035",
+  "active": "f1ab1ade3d7bc932",
   "lastOpenFiles": [
-    "REST API Questions.md",
-    "Style guide.md",
-    "Django/Share B & B.md",
-    "Object-Orientation.md",
-    "lightening talk ideas.md",
+    "System Design/Overview.md",
+    "System Design/Random/Binary to Text Encoding.md",
+    "System Design/Random",
+    "System Design/System Design Questions.md",
+    "System Design",
+    "Java/Java Overview.md",
+    "HTTP.md",
+    "PR Reviews.md",
+    "Git.md",
+    "UNIX/Unix.md",
+    "Python/Getting Started/Installing Python in Venv.md",
+    "Python/Getting Started/Building Web App - JS frontend, Flask Server.md",
+    "My Learnings/Style guide.md",
+    "Wake Up Portfolio envs.md",
+    "RESTful API.md",
+    "React, Tanstack Query, TS.md",
+    "Django/lightening talk ideas.md",
     "How to do Deployments.md",
-    "Javascript Notes/Notes/Sets.md",
-    "Data Structures/Linked Lists.md",
-    "Data Structures/Recursion.md",
-    "Django/Scripts in Django.md",
-    "Django/Django Tutorial.md",
-    "Typescript/Type Confusions.md",
-    "Typescript/Setup.md",
-    "HTML notes/HTML-standard-Rules.md",
-    "Javascript Notes/Setup, Testing Cheatsheet.md",
-    "My Learnings/Advice Gathered.md",
-    "My Learnings/Anti-Bug Checklist.md",
+    "Backend Review.md",
+    "Axios.md",
+    "UNIX/imgs/Pasted image 20240730094903.png",
+    "UNIX/imgs",
+    "UNIX/Pasted image 20240730094403.png",
+    "UNIX",
+    "Cron Jobs.md",
+    "My Learnings/Bug Stories.md",
     "My Learnings/Debugging Process.md",
+    "My Learnings/Anti-Bug Checklist.md",
+    "Spring/Spring Framework.md",
+    "Spring/Spring Boot.md",
+    "Java",
+    "Spring",
+    "Object-Orientation.md",
+    "My Learnings/Advice Gathered.md",
     "GraphQL/imgs/Pasted image 20240706195938.png",
     "GraphQL/imgs",
-    "GraphQL/Untitled.md",
     "GraphQL/imgs/Pasted image 20240629200902.png",
     "Data Structures/imgs/Pasted image 20240712110428.png",
-    "Data Structures/System Design Questions.md",
-    "Data Structures/Sorting.md",
     "Data Structures/imgs/Screenshot 2024-07-08 at 11.20.44 AM.png",
     "Data Structures/imgs",
     "Data Structures/imgs/Screenshot 2024-07-08 at 11.20.56 AM.png",
-    "Backend Review.md",
-    "Python/Getting Started/Building Web App - JS frontend, Flask Server.md",
-    "Python/Flask/GET and POST.md",
-    "Python/Flask/Sessions.md",
-    "Python/Flask/Flask g (global object).md",
     "neetcode/valid_palindrome_125.ts",
     "neetcode/two_sum_1.ts",
-    "neetcode/anagram_242.ts",
-    "neetcode",
-    "Data Structures",
-    "GraphQL",
-    "My Learnings",
-    "Django/SIS",
     "React/screenshots/Pasted image 20240531164516.png",
     "Javascript Notes/screenshots/Screenshot 2024-06-16 at 10.25.01 PM.png",
-    "Javascript Notes/screenshots/Screenshot 2024-05-26 at 12.48.07 PM.png",
-    "Javascript Notes/screenshots/Screenshot 2024-05-20 at 2.10.01 PM.png",
-    "Javascript Notes/screenshots/Screenshot 2024-06-21 at 2.57.52 PM.png"
+    "Javascript Notes/screenshots/Screenshot 2024-05-26 at 12.48.07 PM.png"
   ]
 }
