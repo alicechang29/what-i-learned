@@ -1,7 +1,26 @@
-# How to start up Node console 
-- remember to export what I want out from the file 
+Node is a JS runtime environment.  
 
-# HOW TO MAKE AN INSTANCE INSIDE NODE 
+**To test a single function in Node:** 
+1. console.log the function: `console.log(add(4,5))`
+2. `node add.js`
+
+**To test a class in Node:** 
+1. export the class from the file
+	1. `export class Connect4`
+2. cd into the directory that the class is in 
+3. open node 
+4. import the class: `const { Connect4 } = await import("./connect4.js");`
+5. create an instance of the class `const game = new Connect4()`
+
+
+
+
+
+
+
+-------
+
+### HOW TO MAKE AN INSTANCE INSIDE NODE 
 
 1. **In file**
 ```shell

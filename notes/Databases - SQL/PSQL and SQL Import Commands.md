@@ -16,28 +16,37 @@
 ## SQL
 - used for working with relational DBs
 
+## Importing from SQL
+
+1. recreate the db
+`createdb blog`
+2. feed blog.sql file into blog db
+`psql -f blog.sql blog`
+3. connect to the blog database
+`psql blog`
+4. look at the tables
+`\dt`
+5. view the schemas of the table
+`\d posts`
+
 ## PostgreSQL
 - comes with database console - psql
 - can use this to investigate and interact with the database
-- any errors, restart postgres in shell:
+- any errors, restart **postgres** in shell:
 `$ pg_restart`
 
 
 ### Common commands in psql
-`\l` — List all databases
 
-`\c DB_NAME` — connect to DB_NAME
-
-`\dt` —- List all tables (in current db)
-
-`\d TABLE_NAME` — Get details about TABLE_NAME (in current db)
-
-`\q` — Quit psql (even easier: <Control-D>)
-
-`\h` — Get help on SQL commands
-
-`\?` — Get help on special psql commands
-
+| Command         | Definition                      |
+| --------------- | ------------------------------- |
+| `\l`            | List all databases              |
+| `\c DB_NAME`    | connect to DB_NAME              |
+| `\dt`           | List all tables (in current db) |
+| `\d TABLE_NAME` | View table schema               |
+| `\q`            | Quit psql <Control-D>)          |
+| \h              | Get help on SQL commands        |
+|                 |                                 |
 
 # Getting into a Database
 
@@ -47,17 +56,6 @@ $ psql -l #list all databases available
 $ psql blog #selecting a database
 
 ```
-
-ctrl-D to get out of database
-
-`psql [database]` enter the database
-
-To get all the tables within a database: `\dt`
-
-To view schema of table, use `\d [tablename]`
-    - **schema defines the structure of the data it can hold**
-    - data type , all columns, nullable (not null - indicates required), default values
-
 
 # SQL
 
@@ -114,6 +112,14 @@ $ dropdb [database_name]
 ```
 - but can dump out everything into SQL file and put into git
 
+
+# Indexing 
+
+See lunchly exercise (Express)
+```sql
+CREATE INDEX reservations_customer_id_idx ON public.reservations USING btree (customer_id);
+```
+# Exporting 
 ## Exporting to SQL
 - make a backup of DB by dumping it to a file
 ```shell
@@ -122,25 +128,10 @@ $ pg_dump -c -O blog > blog.sql
 - this makes a file in the current directory, blog.sql
 - it contains commands to recreate the schema and data when needed
 
-## Importing from SQL
-
-1. recreate the db
-`createdb blog`
-2. feed blog.sql file into blog db
-`psql -f blog.sql blog`
-3. connect to the blog database
-`psql blog`
-4. look at the tables
-`\dt`
-5. view the schemas of the table
-`\d posts`
-
-
-# Exporting to Other Formats
-Exporting to CSV
+## Exporting to CSV
 `blog=# \COPY posts TO 'posts.csv' CSV`
 
-Exporting to JSON
+## Exporting to JSON
 `blog=# \copy (SELECT json_agg(posts) FROM posts) TO 'posts.json'`
 
 

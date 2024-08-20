@@ -22,12 +22,6 @@ If removing a node
 - if node is in the middle, need to traverse to the node before the one needing to be removed and change the next value to another node's value
 - If node is last item, need to update the tail to be another node
 
-
-
-
-
-
-
 ![[Screenshot 2024-07-08 at 11.20.44 AM.png]]![[Screenshot 2024-07-08 at 11.20.56 AM.png]]
 
 # How To Solve 
@@ -79,3 +73,65 @@ console.log("LIST", lst);
 }
 ```
 
+
+## Determine if LL is Palindrome
+
+Brute force:  O(n^2)
+- could traverse the entire list
+- put all values into an array and use 2 pointers
+
+Break problem into Parts: O(n) 
+1. Find the midpoint of the List using Fast and Slow pointers 
+	1. The Slow pointer will end up at the start of the second half of the list 
+2. Reverse the second half of the list 
+3. Compare 1st half and 2nd half 
+	1. **NOTE: make sure to compare the VALUES, not the node itself** 
+	2. if comparing node itself, it won't work 
+
+```js
+
+function isPalindrome(head) {
+
+//1-2-2-1
+let slow = head; // 1 - 2, 2
+let fast = head; // 1 - 2 - 2, 1
+
+	while (fast && fast.next) { // 1, null
+		slow = slow.next;
+		fast = fast.next.next;
+	
+	}
+
+// slow is now the start of the second half
+// reverse the second half
+
+let curr = slow; // null
+let prev = null; // 1
+let next = curr.next; //
+
+	while (curr) {
+		//save the next value
+		next = curr.next;
+		//set curr.next = prev
+		curr.next = prev; // 1 - 2 - null
+		//set prev = curr // 2
+		prev = curr;
+		//set curr = next // 1
+		curr = next;
+	
+	}
+//compare the 2 halves (now the prev value is the head of 2nd list)
+
+let head2 = prev;
+	while (head && head2) {
+		if (head.val === head2.val) {
+		head = head.next;
+		head2 = head.next;
+		
+		} else {
+			return false;
+		}
+	}
+return true;
+}
+```

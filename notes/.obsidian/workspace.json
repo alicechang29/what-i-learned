@@ -8,79 +8,31 @@
         "type": "tabs",
         "children": [
           {
-            "id": "551343ecc49a2750",
+            "id": "86d17344a7bde8f8",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Spring/Spring Framework.md",
+                "file": "My Prep/Tech Deep Dive Prep.md",
                 "mode": "source",
                 "source": false
               }
             }
           },
           {
-            "id": "34d16ab9cd91828d",
+            "id": "277fac76a3dea179",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Git.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "0a835a028f5c3026",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "My Learnings/Bug Stories.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "95173f7b1dd8eed8",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "RESTful API.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "a2e6364187a89352",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "System Design/System Design Questions.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "f1ab1ade3d7bc932",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Git.md",
+                "file": "Databases - SQL/Flyway - Manages DB Migrations.md",
                 "mode": "source",
                 "source": false
               }
             }
           }
         ],
-        "currentTab": 5
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -146,7 +98,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Git.md",
+                "file": "Databases - SQL/Flyway - Manages DB Migrations.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -163,7 +115,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Git.md",
+                "file": "Databases - SQL/Flyway - Manages DB Migrations.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -186,7 +138,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Git.md"
+                "file": "Databases - SQL/Flyway - Manages DB Migrations.md"
               }
             }
           }
@@ -207,52 +159,52 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "f1ab1ade3d7bc932",
+  "active": "277fac76a3dea179",
   "lastOpenFiles": [
-    "System Design/Overview.md",
-    "System Design/Random/Binary to Text Encoding.md",
-    "System Design/Random",
-    "System Design/System Design Questions.md",
-    "System Design",
-    "Java/Java Overview.md",
-    "HTTP.md",
-    "PR Reviews.md",
-    "Git.md",
-    "UNIX/Unix.md",
-    "Python/Getting Started/Installing Python in Venv.md",
-    "Python/Getting Started/Building Web App - JS frontend, Flask Server.md",
-    "My Learnings/Style guide.md",
-    "Wake Up Portfolio envs.md",
-    "RESTful API.md",
-    "React, Tanstack Query, TS.md",
-    "Django/lightening talk ideas.md",
-    "How to do Deployments.md",
-    "Backend Review.md",
-    "Axios.md",
-    "UNIX/imgs/Pasted image 20240730094903.png",
-    "UNIX/imgs",
-    "UNIX/Pasted image 20240730094403.png",
-    "UNIX",
-    "Cron Jobs.md",
-    "My Learnings/Bug Stories.md",
-    "My Learnings/Debugging Process.md",
-    "My Learnings/Anti-Bug Checklist.md",
-    "Spring/Spring Framework.md",
-    "Spring/Spring Boot.md",
-    "Java",
-    "Spring",
-    "Object-Orientation.md",
+    "Databases - SQL/PSQL and SQL Import Commands.md",
+    "Databases - SQL/Flyway - Manages DB Migrations.md",
+    "Tailwind CSS.md",
+    "My Prep/Tech Deep Dive Prep.md",
+    "My Prep/RESTful API.md",
+    "My Prep/HTTP.md",
+    "My Prep/Backend Review.md",
+    "Processes/Git.md",
+    "System Design/Messaging App Design - Mock.md",
+    "System Design/Outline.md",
+    "Databases - SQL/SQL-querying.md",
+    "Databases - SQL/sql alchemy.md",
+    "Javascript Notes/Express.md",
+    "Javascript Notes/DB OO Design Patterns.md",
+    "Javascript Notes/Building Express App.md",
+    "Javascript Notes/Posgres with Node and Express.md",
+    "Javascript Notes/Node.md",
+    "Processes/Keyboard shortcuts.md",
+    "OOP/OOP.md",
+    "OOP/OO in JS.md",
+    "OOP/Abstract Base Class.md",
+    "Glossary.md",
     "My Learnings/Advice Gathered.md",
+    "Unix/Unix.md",
+    "Processes/PR Reviews.md",
+    "Processes",
+    "Processes/Onboarding onto Codebase.md",
+    "My Prep",
+    "Libraries, API's",
+    "OOP",
+    "React/screenshots/Pasted image 20240531164516.png",
+    "Deployments",
+    "System Design/Random",
+    "System Design",
+    "Unix/imgs/Pasted image 20240730094903.png",
+    "Unix/imgs",
+    "UNIX/Pasted image 20240730094403.png",
+    "Unix",
+    "Java",
     "GraphQL/imgs/Pasted image 20240706195938.png",
-    "GraphQL/imgs",
     "GraphQL/imgs/Pasted image 20240629200902.png",
     "Data Structures/imgs/Pasted image 20240712110428.png",
     "Data Structures/imgs/Screenshot 2024-07-08 at 11.20.44 AM.png",
-    "Data Structures/imgs",
     "Data Structures/imgs/Screenshot 2024-07-08 at 11.20.56 AM.png",
-    "neetcode/valid_palindrome_125.ts",
-    "neetcode/two_sum_1.ts",
-    "React/screenshots/Pasted image 20240531164516.png",
     "Javascript Notes/screenshots/Screenshot 2024-06-16 at 10.25.01 PM.png",
     "Javascript Notes/screenshots/Screenshot 2024-05-26 at 12.48.07 PM.png"
   ]

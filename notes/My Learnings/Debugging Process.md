@@ -25,6 +25,9 @@
 7. next -- brings me into the next line 
 8. step into -- shows me what variables, etc I have and what the values are 
 
+**To debug api routes, hit the endpoint**
+- go to server in terminal, look at what's there
+
 
 
 
