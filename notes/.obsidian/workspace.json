@@ -13,19 +13,19 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "My Prep/Tech Deep Dive Prep.md",
+                "file": "Unix/Bash Scripts.md",
                 "mode": "source",
                 "source": false
               }
             }
           },
           {
-            "id": "277fac76a3dea179",
+            "id": "c031892ba92422e4",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Databases - SQL/Flyway - Manages DB Migrations.md",
+                "file": "Databases - SQL/PSQL and SQL Import Commands.md",
                 "mode": "source",
                 "source": false
               }
@@ -61,7 +61,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "",
+                "query": "git",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -98,7 +98,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Databases - SQL/Flyway - Manages DB Migrations.md",
+                "file": "Databases - SQL/PSQL and SQL Import Commands.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -115,7 +115,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Databases - SQL/Flyway - Manages DB Migrations.md",
+                "file": "Databases - SQL/PSQL and SQL Import Commands.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -138,7 +138,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Databases - SQL/Flyway - Manages DB Migrations.md"
+                "file": "Databases - SQL/PSQL and SQL Import Commands.md"
               }
             }
           }
@@ -159,35 +159,37 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "277fac76a3dea179",
+  "active": "c031892ba92422e4",
   "lastOpenFiles": [
-    "Databases - SQL/PSQL and SQL Import Commands.md",
+    "Typescript/TS Interfaces.md",
+    "OOP/OOP.md",
+    "Typescript/Bun.sh.md",
+    "Unix/Bash Scripts.md",
     "Databases - SQL/Flyway - Manages DB Migrations.md",
-    "Tailwind CSS.md",
+    "Databases - SQL/PSQL and SQL Import Commands.md",
+    "Spring/Spring Boot.md",
+    "Spring/Spring Framework.md",
+    "Java/Java Overview.md",
+    "Unix/Unix.md",
+    "Testing/Unit Test Strategies.md",
+    "My Learnings/Learning Diary.md",
+    "Processes/Git.md",
+    "Unix/Cron Jobs.md",
     "My Prep/Tech Deep Dive Prep.md",
+    "CSS/Tailwind CSS.md",
+    "Glossary.md",
+    "CSS",
+    "Browser.md",
+    "Testing/Debugging Process.md",
+    "My Learnings/Debugging Process.md",
+    "GraphQL/GraphQL Intro.md",
+    "Testing",
     "My Prep/RESTful API.md",
     "My Prep/HTTP.md",
     "My Prep/Backend Review.md",
-    "Processes/Git.md",
     "System Design/Messaging App Design - Mock.md",
     "System Design/Outline.md",
-    "Databases - SQL/SQL-querying.md",
-    "Databases - SQL/sql alchemy.md",
-    "Javascript Notes/Express.md",
-    "Javascript Notes/DB OO Design Patterns.md",
-    "Javascript Notes/Building Express App.md",
-    "Javascript Notes/Posgres with Node and Express.md",
-    "Javascript Notes/Node.md",
-    "Processes/Keyboard shortcuts.md",
-    "OOP/OOP.md",
-    "OOP/OO in JS.md",
-    "OOP/Abstract Base Class.md",
-    "Glossary.md",
-    "My Learnings/Advice Gathered.md",
-    "Unix/Unix.md",
-    "Processes/PR Reviews.md",
     "Processes",
-    "Processes/Onboarding onto Codebase.md",
     "My Prep",
     "Libraries, API's",
     "OOP",
@@ -198,14 +200,12 @@
     "Unix/imgs/Pasted image 20240730094903.png",
     "Unix/imgs",
     "UNIX/Pasted image 20240730094403.png",
-    "Unix",
-    "Java",
     "GraphQL/imgs/Pasted image 20240706195938.png",
     "GraphQL/imgs/Pasted image 20240629200902.png",
     "Data Structures/imgs/Pasted image 20240712110428.png",
     "Data Structures/imgs/Screenshot 2024-07-08 at 11.20.44 AM.png",
     "Data Structures/imgs/Screenshot 2024-07-08 at 11.20.56 AM.png",
-    "Javascript Notes/screenshots/Screenshot 2024-06-16 at 10.25.01 PM.png",
-    "Javascript Notes/screenshots/Screenshot 2024-05-26 at 12.48.07 PM.png"
+    "Javascript/screenshots/Screenshot 2024-06-16 at 10.25.01 PM.png",
+    "Javascript/screenshots/Screenshot 2024-05-26 at 12.48.07 PM.png"
   ]
 }

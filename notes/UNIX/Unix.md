@@ -28,7 +28,7 @@ Permissions are:
 
 
 ## Cat Command 
-- concatenates files and sends to the screen (shell window)
+- concatenates files and sends to the screen (shell window)  - prints content of file in terminal 
 - `cat ~/ <filepath>`
 	-  The tilde character (~) is Unix shorthand for your home directory.
 
@@ -64,3 +64,18 @@ PATH = list of directories where it expects to find commands
 
 ### Open Command 
 `open -a MyProg.app`
+
+## Accessing PSQL db from a port with user 
+
+ `psql -h localhost -p 5432 -U <username> -d <db name>`
+ - accessing psql on host `-h` localhost from port: `-p` 5432 as the user `-U` for database `-d`
+
+
+
+## .Env 
+- environment variables only exist within the current shell 
+- need to set it 
+
+`ls /Applications/Docker.app/Contents/Resources/bin/`
+
+`export PATH=$PATH:/Applications/Docker.app/Contents/Resources/bin/`
