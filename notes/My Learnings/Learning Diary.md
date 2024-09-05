@@ -1,6 +1,22 @@
+8/28/24
+- network tab > fetch > response gets all the values from api 
+- how to decompose what values are passed into axios to derive the api endpoint value 
+- how tanstack query calls functions that fetch from api and can setup functions to get/mutate the data 
+- how values can be stored in state with zust and used within the view components 
+
+8/26/24
+- How to run a script in Bun 
+- Import json files with Bun 
+
+8/25/24
+- Learned how to find data without given API 
+- TS Interfaces 
+
+8/24/24 
+- Learned how to startup Bun project 
+
 8/23/24 
 - Learned how to write Bash script for starting up environments 
-- 
 
 8/21/24
 - Spring Controller 

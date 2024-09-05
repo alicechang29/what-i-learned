@@ -13,6 +13,10 @@ export interface IExpressError extends Error {
 // and is adding an object field of "status"
 ```
 
+If defining interface on the frontend: 
+- Make API call 
+- Pull out the properties 
+
 ### Implementing Interface 
 To define a class that implements an Interface
 

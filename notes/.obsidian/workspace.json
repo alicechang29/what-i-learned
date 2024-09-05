@@ -4,35 +4,22 @@
     "type": "split",
     "children": [
       {
-        "id": "4e4e125f542b860f",
+        "id": "2d8104ea133c2e8b",
         "type": "tabs",
         "children": [
           {
-            "id": "86d17344a7bde8f8",
+            "id": "29bec9b5e32f3a8f",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Unix/Bash Scripts.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "c031892ba92422e4",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Databases - SQL/PSQL and SQL Import Commands.md",
+                "file": "System Design/MVCS Model.md",
                 "mode": "source",
                 "source": false
               }
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -98,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Databases - SQL/PSQL and SQL Import Commands.md",
+                "file": "System Design/MVCS Model.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -115,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Databases - SQL/PSQL and SQL Import Commands.md",
+                "file": "System Design/MVCS Model.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -138,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Databases - SQL/PSQL and SQL Import Commands.md"
+                "file": "System Design/MVCS Model.md"
               }
             }
           }
@@ -159,36 +146,36 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "c031892ba92422e4",
+  "active": "ff4f0aaf0e28d8cc",
   "lastOpenFiles": [
-    "Typescript/TS Interfaces.md",
-    "OOP/OOP.md",
     "Typescript/Bun.sh.md",
-    "Unix/Bash Scripts.md",
-    "Databases - SQL/Flyway - Manages DB Migrations.md",
-    "Databases - SQL/PSQL and SQL Import Commands.md",
-    "Spring/Spring Boot.md",
-    "Spring/Spring Framework.md",
-    "Java/Java Overview.md",
-    "Unix/Unix.md",
-    "Testing/Unit Test Strategies.md",
-    "My Learnings/Learning Diary.md",
+    "System Design/MVCS Model.md",
+    "Javascript/screenshots/Pasted image 20240903101910.png",
+    "Javascript/Express - JSON Web Tokens for Authentication.md",
+    "Javascript/Express.md",
+    "React/Conditionals in React.md",
+    "React/Getting Started.md",
+    "React/React \"useEffect\".md",
+    "React/React Context.md",
+    "React/React Event and States.md",
+    "React/React Router.md",
+    "React/React Testing Tips.md",
     "Processes/Git.md",
-    "Unix/Cron Jobs.md",
-    "My Prep/Tech Deep Dive Prep.md",
-    "CSS/Tailwind CSS.md",
-    "Glossary.md",
-    "CSS",
-    "Browser.md",
+    "Typescript/TS Interfaces.md",
+    "Spring/Spring Boot.md",
+    "Testing/Unit Test Strategies.md",
     "Testing/Debugging Process.md",
-    "My Learnings/Debugging Process.md",
-    "GraphQL/GraphQL Intro.md",
+    "Libraries, API's/Axios.md",
+    "My Learnings/Learning Diary.md",
+    "Browser.md",
+    "Processes/Keyboard shortcuts.md",
+    "Data Structures/Trees.md",
+    "Data Structures/Recursion.md",
+    "Unix/Bash Scripts.md",
+    "Databases - SQL/PSQL and SQL Import Commands.md",
+    "OOP/OOP.md",
+    "CSS",
     "Testing",
-    "My Prep/RESTful API.md",
-    "My Prep/HTTP.md",
-    "My Prep/Backend Review.md",
-    "System Design/Messaging App Design - Mock.md",
-    "System Design/Outline.md",
     "Processes",
     "My Prep",
     "Libraries, API's",
@@ -205,7 +192,6 @@
     "Data Structures/imgs/Pasted image 20240712110428.png",
     "Data Structures/imgs/Screenshot 2024-07-08 at 11.20.44 AM.png",
     "Data Structures/imgs/Screenshot 2024-07-08 at 11.20.56 AM.png",
-    "Javascript/screenshots/Screenshot 2024-06-16 at 10.25.01 PM.png",
-    "Javascript/screenshots/Screenshot 2024-05-26 at 12.48.07 PM.png"
+    "Javascript/screenshots/Screenshot 2024-06-16 at 10.25.01 PM.png"
   ]
 }

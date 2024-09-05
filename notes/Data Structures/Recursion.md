@@ -1,6 +1,8 @@
 
 # Steps to Think Through 
 
+**NOTE: Always list base case first** 
+
 1. Base Case - Can be hidden or explicit 
 2. Progress 
 3. **WHAT DOES THE FUNCTION RETURN?? 

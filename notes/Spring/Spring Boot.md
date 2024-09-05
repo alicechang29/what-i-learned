@@ -19,3 +19,33 @@ Business logic = answering how something should be created, where something shou
 
 ### Controller 
 **tldr:** Use if you want an endpoint that doesn't fit into REST rules 
+
+
+This creates an endpoint of: `/api/myTeam?applicantId=<enter value>`
+```java
+import lombok.RequiredArgsConstructor;
+
+@RequiredArgsConstructor
+@RestController  //Part of Spring 
+public class MyTeamController {
+	private final MyTeamService myTeamService;
+		
+	@GetMapping("/myTeam")
+	public List<MyTeamService.TeamMember> getMyTeam(@RequestParam UUID applicantId) {
+		return myTeamService.getMyTeam(applicantId);
+	}
+	
+	@ResponseStatus(value = HttpStatus.NO_CONTENT)
+	@DeleteMapping("/myTeam")
+	public void deleteMember(
+			@RequestParam("applicantId") UUID applicantId,
+			@RequestParam("memberUserId") UUID memberUserId) {
+	myTeamService.deleteMember(applicantId, memberUserId);
+	}
+}
+
+```
+
+Reminder: 
+- Request parameters are values that go after the `?`
+- URL's that contain a `%` means they are encoded 

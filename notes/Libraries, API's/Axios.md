@@ -48,3 +48,24 @@ fetch(url, options)
     console.log(data);
   });
 ```
+
+
+To write go to endpoint using Axios: 
+```ts
+const myTeamResource = 'myTeam';
+
+export const getTeam = async (applicantId: string): Promise<Team[]> => {
+	const params = {
+		params: {
+		applicantId
+		}
+	};
+	const { data } = await axios.get<Team[]>(myTeamResource, params);
+
+	return data;
+};
+
+```
+
+To check the endpoint myself: 
+`/api/myTeam?applicantId=<value>` 

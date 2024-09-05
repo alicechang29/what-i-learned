@@ -10,7 +10,7 @@
 3. git pull 
 4. git checkout my branch 
 5. git merge dev 
-6. resolve my own conflicts - ctrl-s, ctrl-q
+6. resolve my own conflicts - `ctrl-s, ctrl-q`
 7. git commit to my current branch 
 8. git push 
 
