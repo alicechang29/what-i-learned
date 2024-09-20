@@ -4,4 +4,13 @@
 	- spent 8 hours trying to figure out how to write tests 
 	- thought I was being clever by using a factory that could generate all my instances 
 	- later found out the factory should only be used to generate fake db 
-	- 
+- Found a missing relationship between 2 entities 
+	- Confirmed with VP that there is a missing relation 
+	- Made enhancement to the schema so that they would be connected
+		- lookup_type.id 
+	- Now there is access between relationship with 
+		- table of relationships 
+			- student 
+			- parent 
+		- applicant users 
+	- **Find the impact** 

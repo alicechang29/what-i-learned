@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "System Design/MVCS Model.md",
+                "file": "AWS/Lambda.md",
                 "mode": "source",
                 "source": false
               }
@@ -48,7 +48,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "git",
+                "query": "lambda",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -65,7 +65,8 @@
               "state": {}
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "horizontal",
@@ -85,7 +86,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "System Design/MVCS Model.md",
+                "file": "AWS/Lambda.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +103,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "System Design/MVCS Model.md",
+                "file": "AWS/Lambda.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +126,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "System Design/MVCS Model.md"
+                "file": "AWS/Lambda.md"
               }
             }
           }
@@ -146,34 +147,36 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "ff4f0aaf0e28d8cc",
+  "active": "29bec9b5e32f3a8f",
   "lastOpenFiles": [
-    "Typescript/Bun.sh.md",
     "System Design/MVCS Model.md",
+    "Python/Getting Started/Installing Python in Venv.md",
+    "Python/Getting Started/Building Web App - JS frontend, Flask Server.md",
+    "Processes/Git.md",
+    "Databases - SQL/SQL-querying.md",
+    "Databases - SQL/sql alchemy.md",
+    "Databases - SQL/PSQL and SQL Import Commands.md",
+    "Databases - SQL/Flyway - Manages DB Migrations.md",
+    "Databases - SQL/Drizzle ORM.md",
+    "System Design/Messaging App Design - Mock.md",
+    "My Prep/Backend Review.md",
+    "My Prep/HTTP.md",
+    "My Prep/RESTful API.md",
+    "My Prep/Tech Deep Dive Prep.md",
+    "My Learnings/Bug Stories.md",
+    "Deployments/How to do Deployments.md",
+    "AWS/Lambda.md",
+    "Unix/Grep.md",
+    "AWS",
+    "Unix/Unix.md",
+    "Unix/Bash Scripts.md",
+    "Typescript/Bun.sh.md",
     "Javascript/screenshots/Pasted image 20240903101910.png",
     "Javascript/Express - JSON Web Tokens for Authentication.md",
     "Javascript/Express.md",
     "React/Conditionals in React.md",
     "React/Getting Started.md",
     "React/React \"useEffect\".md",
-    "React/React Context.md",
-    "React/React Event and States.md",
-    "React/React Router.md",
-    "React/React Testing Tips.md",
-    "Processes/Git.md",
-    "Typescript/TS Interfaces.md",
-    "Spring/Spring Boot.md",
-    "Testing/Unit Test Strategies.md",
-    "Testing/Debugging Process.md",
-    "Libraries, API's/Axios.md",
-    "My Learnings/Learning Diary.md",
-    "Browser.md",
-    "Processes/Keyboard shortcuts.md",
-    "Data Structures/Trees.md",
-    "Data Structures/Recursion.md",
-    "Unix/Bash Scripts.md",
-    "Databases - SQL/PSQL and SQL Import Commands.md",
-    "OOP/OOP.md",
     "CSS",
     "Testing",
     "Processes",
@@ -185,7 +188,6 @@
     "System Design/Random",
     "System Design",
     "Unix/imgs/Pasted image 20240730094903.png",
-    "Unix/imgs",
     "UNIX/Pasted image 20240730094403.png",
     "GraphQL/imgs/Pasted image 20240706195938.png",
     "GraphQL/imgs/Pasted image 20240629200902.png",

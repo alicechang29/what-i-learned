@@ -1,6 +1,41 @@
- the database schema, and the static data, is basically part of the back end service.  You want to be able to have code that creates/modifies the tables, or that data, in the same git repo with the rest if the code.   flyway calls the SQL scripts that manage that "migrations", and there is a directory full of them with a specific naming convention that flyway translates as "schema revisions", in order.   It makes its own table in the database to keep track of which have been "applied".   And when you run flyway:migrate, it looks if there is anything in the directory it hasn't applied yet, and applies them.   You can run flyway:info, and you can see the list, and from the names you can guess what most of them do.
+## What is Flyway? 
+- Flyway calls the SQL scripts that manage migrations 
+- In the BE, there is a directory of SQL scripts that flyway translates as "schema revisions", in order 
+```shell
+Category   | Version     | Description                                               | Type   | Installed On        | State   | Undoable |
+
++------------+-------------+-----------------------------------------------------------+--------+---------------------+---------+----------+
+
+|            |             | << Flyway Schema Creation >>                              | SCHEMA | 2024-08-21 12:14:20 | Success |          |
+
+| Versioned  | 1           | baseline  migration                                       | SQL    | 2024-08-21 12:14:20 | Success | No       |
+
+| Versioned  | 20230525.1  | add more types                                            | SQL    | 2024-08-21 12:14:20 | Success | No       |
+
+| Versioned  | 20230613.2  | school props                                              | SQL    | 2024-08-21 12:14:20 | Success | No       |
+```
+- Flyway makes its own table in the database to keep track of which schemas have been "applied".   
+- When `flyway:migrate` is run, Flyway looks if there is anything in the directory it hasn't applied yet, and applies them.   
+
+## Flyway Commands  
+
+| Command                 | Definition                 |
+| ----------------------- | -------------------------- |
+| `./mvnw flyway:info`    | find latest schema version |
+| `./mvnw flyway:migrate` |                            |
+
+### Steps to update DB schema 
+(adding a field -- adding `deliverablesMode` to Applicant table) 
+1. Make a migration that added the new column `deliverables_mode` to `applicant`table
+2. Add the field to the java code 
+3. Implement the logic 
+
+TODO: -- add more details... 
+
+
  
-For example, the other day when I added a property `devlirablesMode` to an Applicant, the first step was to make a migration that added the column `deliveables_mode` to the `applicant` table,    And then, as part of the same change, I added that field to the java code.   And then I implemented the logic that was supposed to use it.
+ the database schema, and the static data, is basically part of the back end service.  
+
 
 Some ORMs (like java's hibernate) have features that will generate / manage the schema for you based on the code, but we don't like those.   Also, many frameworks (like spring) have a feature where you can have the app run `flyway migrate` as part of the app startup, but we don't like that either for operational reasons - there is no perfect way to test the migrations, so every so often you end up with them working on dev and test but then failing on prod, and in my opinion you want to run that as a separate manually step so you can decide what to do when that happens.
 
