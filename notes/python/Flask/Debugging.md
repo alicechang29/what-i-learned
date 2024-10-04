@@ -1,5 +1,8 @@
 DO NOT ALTER CODE IN MIDDLE OF DEBUGGING 
 
+**Determining if bug is with code or API**
+
+
 **Process for Debugging** 
 1. Start debugging 
 2. Figure out issue 
@@ -57,3 +60,6 @@ breakpoint()
 | s   | Step into function call            |
 | c   | Continue to next breakpoint or end |
 | w   | Print “frame” (where am I?)        |
+
+
+

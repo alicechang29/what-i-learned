@@ -13,13 +13,38 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "AWS/Lambda.md",
+                "file": "AWS/S3.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "ca97b73e16f47cd4",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Javascript/Express - JSON Web Tokens for Authentication.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "e1281aa1495dd868",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Authentication and Authorization.md",
                 "mode": "source",
                 "source": false
               }
             }
           }
-        ]
+        ],
+        "currentTab": 2
       }
     ],
     "direction": "vertical"
@@ -48,7 +73,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "lambda",
+                "query": "",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -65,8 +90,7 @@
               "state": {}
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "horizontal",
@@ -86,7 +110,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "AWS/Lambda.md",
+                "file": "Authentication and Authorization.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -103,7 +127,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "AWS/Lambda.md",
+                "file": "Authentication and Authorization.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -126,7 +150,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "AWS/Lambda.md"
+                "file": "Authentication and Authorization.md"
               }
             }
           }
@@ -147,36 +171,38 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "29bec9b5e32f3a8f",
+  "active": "e1281aa1495dd868",
   "lastOpenFiles": [
-    "System Design/MVCS Model.md",
-    "Python/Getting Started/Installing Python in Venv.md",
-    "Python/Getting Started/Building Web App - JS frontend, Flask Server.md",
+    "AWS/S3.md",
+    "AWS/Lambda.md",
+    "Authentication and Authorization.md",
+    "Javascript/Express - JSON Web Tokens for Authentication.md",
     "Processes/Git.md",
+    "My Prep/Backend Review.md",
+    "AWS/imgs",
+    "AWS/imgs/Pasted image 20241003145032.png",
+    "My Learnings/Advice Gathered.md",
+    "Python/Getting Started/Installing Python in Venv.md",
+    "My Learnings/Bug Journal.md",
+    "Deployments/How to do Deployments.md",
+    "My Prep/Tech Deep Dive Prep.md",
+    "Python/Flask/Debugging.md",
+    "Databases - SQL/Flyway - Manages DB Migrations.md",
+    "Untitled.md",
+    "Processes/Keyboard shortcuts.md",
+    "System Design/MVCS Model.md",
+    "Python/Getting Started/Building Web App - JS frontend, Flask Server.md",
     "Databases - SQL/SQL-querying.md",
     "Databases - SQL/sql alchemy.md",
     "Databases - SQL/PSQL and SQL Import Commands.md",
-    "Databases - SQL/Flyway - Manages DB Migrations.md",
     "Databases - SQL/Drizzle ORM.md",
     "System Design/Messaging App Design - Mock.md",
-    "My Prep/Backend Review.md",
     "My Prep/HTTP.md",
     "My Prep/RESTful API.md",
-    "My Prep/Tech Deep Dive Prep.md",
-    "My Learnings/Bug Stories.md",
-    "Deployments/How to do Deployments.md",
-    "AWS/Lambda.md",
     "Unix/Grep.md",
     "AWS",
     "Unix/Unix.md",
-    "Unix/Bash Scripts.md",
-    "Typescript/Bun.sh.md",
     "Javascript/screenshots/Pasted image 20240903101910.png",
-    "Javascript/Express - JSON Web Tokens for Authentication.md",
-    "Javascript/Express.md",
-    "React/Conditionals in React.md",
-    "React/Getting Started.md",
-    "React/React \"useEffect\".md",
     "CSS",
     "Testing",
     "Processes",
@@ -186,14 +212,12 @@
     "React/screenshots/Pasted image 20240531164516.png",
     "Deployments",
     "System Design/Random",
-    "System Design",
     "Unix/imgs/Pasted image 20240730094903.png",
     "UNIX/Pasted image 20240730094403.png",
     "GraphQL/imgs/Pasted image 20240706195938.png",
     "GraphQL/imgs/Pasted image 20240629200902.png",
     "Data Structures/imgs/Pasted image 20240712110428.png",
     "Data Structures/imgs/Screenshot 2024-07-08 at 11.20.44 AM.png",
-    "Data Structures/imgs/Screenshot 2024-07-08 at 11.20.56 AM.png",
-    "Javascript/screenshots/Screenshot 2024-06-16 at 10.25.01 PM.png"
+    "Data Structures/imgs/Screenshot 2024-07-08 at 11.20.56 AM.png"
   ]
 }

@@ -1,4 +1,10 @@
-AWS Lambda functions are functions that can be executed without managing own servers. 
+## Overview 
+
+AWS Lambda functions are functions that can be executed without managing own servers.
+
+how a lambda can access things in an s3 bucket without the s3 bucket being public
+
+## How it works 
 
 Data is stored within the **event** object of the lambda function. 
 
