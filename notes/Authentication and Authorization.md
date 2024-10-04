@@ -9,7 +9,7 @@
 	- 2 factor authentication 
 	- Tokens: 
 		- JWTs
-			-[ Disadvantages ](https://medium.com/@codealfi/understanding-jwt-authentication-benefits-and-limitations-3c388dba172e#:~:text=Disadvantages%20of%20JWT%20Authentication%3A&text=Limited%20Token%20Expiry%20Control%3A%20Once,attackers%20can%20create%20forged%20tokens.)
+			- [ Disadvantages ](https://medium.com/@codealfi/understanding-jwt-authentication-benefits-and-limitations-3c388dba172e#:~:text=Disadvantages%20of%20JWT%20Authentication%3A&text=Limited%20Token%20Expiry%20Control%3A%20Once,attackers%20can%20create%20forged%20tokens.)
 				- Token size - increases with the amount of info it contains 
 				- Limited Token Expiry Control 
 					- Not so easy to revoke JWT token 
