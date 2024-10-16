@@ -73,6 +73,7 @@ It offers:
 	- Each class can be developed and tested independently 
 	- Class can be reused across different parts of the app 
 - #### Abstraction 
+	- not everyone has to understand everything in order to write query and use functions 
 
 
 # Interface vs Subclassing 

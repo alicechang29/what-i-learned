@@ -1,7 +1,7 @@
 ## To checkout a branch
 
-1. git pull 
-2. git checkout 
+1. `git pull` 
+2. `git checkout <branch>`
 
 ### Merge Dev into my branch 
 
@@ -13,6 +13,21 @@
 6. resolve my own conflicts - `ctrl-s, ctrl-q`
 7. git commit to my current branch 
 8. git push 
+
+### Handling Merge Conflicts 
+Merge is  a 2 step process under the hood but is confusing because it is 1 command
+`Git merge <branch>`
+
+Git is really doing 2 steps: 
+1. Auto-merging all the files 
+2. Committing the changes as a new commit 
+
+**If a merge conflict happens, Git forces you to fix the issue.** 
+1. Fix the merge conflict 
+2. Add the file `git add <file>`
+3. `Git commit`
+4. Proceed like normal 
+
 
 ## Git Commands
 
