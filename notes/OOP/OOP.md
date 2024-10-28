@@ -126,6 +126,15 @@ Motorcycle implements the Cargo interface
 # OOP Language Differences 
 
 **"What is the difference between how people do OOP between JS vs Python"**
+- JS does not have built in support for interfaces 
+- Interfaces are defined as an object in JS using dynamic approach using duck typing 
+	- Duck Typing = object is considered to implement an interface if it has the required methods or properties, regardless of explicit declarations.
+- People ensure that classes correctly implement interfaces using: 
+	- Tests 
+	- Comments / Documentation 
+	- Manual checks 
+- Can only check at **runtime** (using tests) if an object is correctly implementing an interface 
+	- VS in Typescript, we will know at **compile time** since it is a statically typed language 
 
 
 
