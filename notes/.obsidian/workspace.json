@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Data Structures & Algos/Trees.md",
+                "file": "Python/Python Syntax.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Trees"
+              "title": "Python Syntax"
             }
           }
         ]
@@ -93,7 +93,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Data Structures & Algos/Trees.md",
+                "file": "Python/Python Syntax.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -103,7 +103,7 @@
                 "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "Backlinks for Trees"
+              "title": "Backlinks for Python Syntax"
             }
           },
           {
@@ -112,12 +112,12 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Data Structures & Algos/Trees.md",
+                "file": "Python/Python Syntax.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               },
               "icon": "links-going-out",
-              "title": "Outgoing links from Trees"
+              "title": "Outgoing links from Python Syntax"
             }
           },
           {
@@ -139,10 +139,10 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Data Structures & Algos/Trees.md"
+                "file": "Python/Python Syntax.md"
               },
               "icon": "lucide-list",
-              "title": "Outline of Trees"
+              "title": "Outline of Python Syntax"
             }
           }
         ]
@@ -165,17 +165,26 @@
   "active": "b68b995751f6efd5",
   "lastOpenFiles": [
     "Python/Python Syntax.md",
+    "Data Structures & Algos/Trees.md",
+    "My Learnings/Architecture & Networking Notes.md",
+    "My Learnings/Bug Journal.md",
+    "My Learnings/Debugging Process.md",
+    "My Learnings/Learning Diary.md",
+    "My Learnings/Pasted image 20241025103848.png",
+    "Pasted image 20241011111625.png",
+    "My Learnings/Screenshot 2024-10-25 at 10.30.11 AM.png",
+    "Idempotent & Immutable.md",
+    "Untitled.md",
+    "Browser.md",
+    "Glossary.md",
+    "Authentication and Authorization.md",
+    "%run.md",
     "Python/Getting Started/Installing Python in Venv.md",
     "Django/Django Tutorial.md",
-    "%run.md",
     "Python/Getting Started/User Authentication and Authorization.md",
     "Python/Getting Started/Testing Cheatsheet.md",
     "Python/Getting Started/Python Testing.md",
     "Python/Getting Started/Building Web App - JS frontend, Flask Server.md",
-    "My Learnings/Architecture & Networking Notes.md",
-    "Pasted image 20241025103848.png",
-    "Screenshot 2024-10-25 at 10.30.11 AM.png",
-    "My Learnings/Bug Journal.md",
     "AWS/AWS Questions.md",
     "AWS/Lambda.md",
     "AWS/S3.md",
@@ -184,17 +193,8 @@
     "OOP/OOP.md",
     "OOP/OOP Best Practices.md",
     "Javascript/Node.md",
-    "Typescript/Setup.md",
-    "OOP/OO in JS.md",
-    "OOP/Abstract Base Class.md",
-    "OOP/Throwing Exceptions.md",
-    "My Learnings/Practice Notes.md",
-    "Data Structures & Algos/ADT,  Big-O,  Search,  Sorting Algos.md",
-    "Analytics Products.md",
-    "Testing/Debugging Process.md",
     "Data Structures & Algos/Algos",
     "Data Structures & Algos/imgs/binaryToDecimal.png",
-    "Pasted image 20241011111625.png",
     "AWS/imgs",
     "AWS/imgs/Pasted image 20241003145032.png",
     "AWS",

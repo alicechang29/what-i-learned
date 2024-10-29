@@ -9,7 +9,7 @@
         - **Serving static files** to the client.
         - **Proxying API requests** to the backend service
 3. **Nginx Proxies to Backend Service**:
-    - Nginx forwards dynamic or API requests to the **backend service**, built in **Java and Spring
+    - Nginx forwards API requests to the **backend service**, built in **Java and Spring
 4. **Backend Service Retrieves Data**:
     - The backend service fetches data from:
         - **Redis ElastiCache** for caching.
@@ -28,7 +28,7 @@
 
 **Frontend deployments**
 - CI portion
-	- merge onto release branch 
+	- merge changes onto release branch 
 	- Release branch goes into Dev 
 	- Tests/deploy are running on every commit 
 - Merging onto release branch triggers a Github Action to be created 

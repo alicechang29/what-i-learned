@@ -8,9 +8,30 @@
 - **comparisons** to True/False should use `is`, not `==`
 - if i know the key, use `.` , if i don't know key, `[ ]`
 - When defining class method, If I want to customize my error message but a method always raises KeyError, check if the value is true/false first -- eg: `key in dict`
-- 
+- Use `not` in place of `!` 
 
-### Comparing Equality - `is` vs `==`
+
+Type annotation: all or nothing. Don't add.
+ Remove lots of "()" 
+ Remove "is True"
+ "a is False" -> "not a"
+ Good specific exception type. In interview raise Exception() is sufficient though.
+ book.status = True: ambiguous 
+ Learn a bit about for loop filter semantics: [a.field for a in a_list]
+
+### `is` vs `==`
+`is` compares memory reference 
+`==` compares object value equality 
+
+```python 
+a = {'name': "apple", 'q': 15}
+b = {'name': 'apple', 'q': 15}
+
+a == b # TRUE 
+
+a is b # FALSE 
+```
+
 **READ:** 
 https://stackoverflow.com/questions/132988/is-there-a-difference-between-and-is
 https://stackoverflow.com/questions/26595/is-there-any-difference-between-foo-is-none-and-foo-none
@@ -34,7 +55,7 @@ new_node = NodeStr("hi")
 	- `book = self.search_books_by_isbn(isbn)`
 
 
-### Dicts 
+## Dicts 
 To get keys by index, turn dict keys into a list and access by index 
 - `list(lib.users.keys())[0]`
 Same with values:
@@ -93,55 +114,35 @@ finally:
 - LookupError
 - PermissionError 
 
+## 6 Falsy Values 
+- None
+- 0
+- False
+- ""
+- `[]`
+- `{}`
 
+## Writing Unittests 
 
-------------------------------------------------
-
-
-
-### Lists 
-
-- Python is dynamically typed but can also declare types in Python `val: str`
-- Instead of `null`, it's `None`
-- Lists: 
-	- Adding values to an array (list), it is `list.append(val)`
-	- Removing values: 
-		- `list.pop(1)` removes value at index **and** returns the removed value 
-		- `list.remove(val)` removes the first instance of the specified value
+1. `import unittest`
+2. `from file import class`
+3. for each method that is tested, define the `actual` and `expected` values 
+4. use `self.assertEqual` to test if expected = actual 
+5. At bottom, designate file as the main test file to run 
 ```python
-list = ['apple', 'cherry', 'apple', 'banana']
-list.remove('apple')
-# ['cherry', 'apple', 'banana']
+import unittest
+from debug2 import Item, Inventory
+
+class TestItem(unittest.TestCase):
+	def test_create(self):
+		item = Item("apple", 15)
+		expected = {"name": "apple", "quantity": 15}
+		actual = {"name": item.name, "quantity": item.quantity}
+		self.assertEqual(expected, actual)
+
+if __name__ == "__main__":
+	unittest.main()
 ```
 
-
-### Function for Iterables
-
-`.count()`
-- count the given element within the iterable
-
-```python
-def single_letter_count(word, letter):
-    word.lower().count(letter.lower())
-```
-
-### Dictionary
-
-Dictionary methods:
-
-`.get()`
-- get the dictionary key's value
-`.get(dictionary key, default value)`
-
-```python
-def multiple_letter_count(phrase):
-
-dict = {}
-
-for elem in phrase:
-dict[elem] = dict.get(elem, 0) + 1
-return dict
-```
-
-
+**To run the test:** `python -m unittest test_item.py`
 
