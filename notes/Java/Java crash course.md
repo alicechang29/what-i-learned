@@ -132,3 +132,75 @@ String name1 = "alice";
 String name2 = "bob"; 
 boolean nameComparision = name1.equals(name2); //false 
 ```
+
+
+### Object Types vs Primitive types 
+Integer vs int 
+Boolean vs boolean 
+- **lowercase types (are primitive types) will NEVER be null - compiler won't let you do that**
+- **anything uppercase COULD be null because it's just an object** 
+
+During refactoring, there became possibilities where boolean becomes Boolean 
+- Using apache commons
+```java
+//this allows you to turn truthy/falsy values into true or false 
+BooleanUtils.isTrue(school.getAlwaysReachOutState()),
+//instead of having to write entire if/else conditions for handling falsy values
+```
+
+- Everything with capital letter is an object 
+- an obj with int can reference 
+- integers are numbers, there is no null 
+	- if have something in code where you always want to treat it as a primitive type, will know it will never be null 
+	- Inside myChances, it takes boolean values but due to refactoring, those values could be null 
+## Method Overloading 
+
+**Method signature = name + all parameters (with types)**
+
+- From Java's perspective, method with the same name but different parameters are 3 different methods. 
+	- Java is checking how many parameters and the parameter types 
+- Can't have the same method signature that differ by return type (one returns int and other returns string but all same params + name, can't have that)
+
+**Reasons why method overloading is used:** 
+- For unittests ? 
+- you are calling a method in a whole bunch of places and then decide need to add in a new arg 
+	- Option: can update the method and then update it everywhere it's called 
+		- IRL, could be writing a library and whole bunch of people are using that library 
+	- In Java, can implement new method that has second param, leave the existing method there 
+		- Change the existing method to be a wrapper around the new method 
+		- Can technically have all the methods have different names but then you will need to make up a bunch of names 
+
+**Creating a Wrapper Method:**
+```java
+
+//the real existing method with all the logic 
+private Integer calculateChances(  
+        School school,  
+        ApplicantProfileService.ApplicantProfile profile,  
+        BigDecimal admissionRate,  
+        boolean alwaysReach,  
+        boolean neverLikely) {}
+
+//in the beginning, everything was calling ^^ 
+//but bc of refactoring, need to update param of School to ApplicantSchool 
+
+//1. update existing with new signature 
+//2. create new wrapper method that has same signature as original method 
+//3. then new wrapper calls the real method which translates everything into the new signature of the updated method 
+
+
+//WRAPPER 
+public Integer calculateChances(ApplicantSchool applicantSchool, ApplicantProfileService.ApplicantProfile profile) {  
+    return calculateChances(  
+            applicantSchool.getSchool(),  
+            profile,  
+            applicantSchool.getSpecificAdmissionRate(), // This is ALWAYS the rate to use, even when not applying  
+            BooleanUtils.isTrue(applicantSchool.getAlwaysReach()),  
+            BooleanUtils.isTrue(applicantSchool.getNeverLikely()));  
+}
+
+
+```
+
+
+

@@ -28,6 +28,13 @@ Git is really doing 2 steps:
 3. `Git commit`
 4. Proceed like normal 
 
+### Rebase 
+`git pull --rebase`
+
+### Reset back to a specific commit 
+`git reset --hard <HASH-CODE>`
+
+
 
 ## Git Commands
 
@@ -57,8 +64,6 @@ From Git perspective, dev from local repo and origin in local repo are 2 differe
 
 
 Note: "Pull Requests" are a Github specific thing 
-
-
 
 1. git pull (from development)
 2. git checkout -b (new branch name)

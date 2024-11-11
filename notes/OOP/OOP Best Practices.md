@@ -44,6 +44,45 @@ function borrow(isbn: string, user_id: string) {
 
 ```
 
+
+#### Throwing Errors within the Model 
+Different frameworks will throw different errors, depending on situation. 
+
+There is no need to check for duplicates / handle specific errors when checking database if record already exists in DB before creating that record 
+- There should be a unique constraint in the database. Therefore, checking in the application for duplicate is needless inefficiency 
+- There is a race condition -- a row could be inserted in-between checking in the app vs the actual insert
+	- DB transactions and constraints are specifically designed to handle this 
+		- DB or framework will throw the error for you 
+			- Postgres - https://www.postgresql.org/docs/current/errcodes-appendix.html
+			- Spring - Data Integrity Error: https://docs.spring.io/spring-framework/docs/current/javadoc-api/org/springframework/dao/DataIntegrityViolationException.html
+- Only thing that needs to be handled is what to do if there is a Data Integrity Error 
+	- Do nothing? 
+	- Do something else? 
+	- Catch the error? 
+
+- Examples of conditions that aren't needed at all: 
+```java
+
+applicantUserRepository.findByUserIdAndApplicantId(user.getId(), applicant.getId())
+	.ifPresent(x -> { 
+		throw new ResponseStatusException( HttpStatus.BAD_REQUEST, "User " + user.getName() + " has been already invited by applicant " + applicant.getName()); }); 
+
+ApplicantUser savedApplicantUser = applicantUserRepository.save(applicantUser);
+
+//THERE IS NO NEED FOR THE .ifPresent check at all here 
+```
+
+```javascript 
+static async create({ title, salary, equity, companyHandle }) { 
+const companyCheck = await db.query(
+` SELECT handle FROM companies WHERE handle = $1`, [companyHandle]); 
+
+if (!companyCheck.rows[0]) throw new BadRequestError(`${companyHandle} doesn't exist.`); 
+
+//^^ This duplicate check doesn't need to be here 
+```
+
+
 #### Catching Errors 
 In JavaScript, errors are **thrown** using the `throw` statement and **caught** using `try/catch` blocks.
 

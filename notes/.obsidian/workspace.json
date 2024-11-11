@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Python/Python Syntax.md",
+                "file": "OOP/OOP Best Practices.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Python Syntax"
+              "title": "OOP Best Practices"
             }
           }
         ]
@@ -52,7 +52,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "ipython",
+                "query": "",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -93,7 +93,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Python/Python Syntax.md",
+                "file": "Libraries, API's/Axios.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -103,7 +103,7 @@
                 "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "Backlinks for Python Syntax"
+              "title": "Backlinks for Axios"
             }
           },
           {
@@ -112,12 +112,12 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Python/Python Syntax.md",
+                "file": "Libraries, API's/Axios.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               },
               "icon": "links-going-out",
-              "title": "Outgoing links from Python Syntax"
+              "title": "Outgoing links from Axios"
             }
           },
           {
@@ -139,10 +139,10 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Python/Python Syntax.md"
+                "file": "Libraries, API's/Axios.md"
               },
               "icon": "lucide-list",
-              "title": "Outline of Python Syntax"
+              "title": "Outline of Axios"
             }
           }
         ]
@@ -164,6 +164,26 @@
   },
   "active": "b68b995751f6efd5",
   "lastOpenFiles": [
+    "OOP/OOP.md",
+    "OOP/OO in JS.md",
+    "Data & Databases/Normalized vs Denormalized Data.md",
+    "OOP/OOP Best Practices.md",
+    "Java/Java crash course.md",
+    "Java/Java Overview.md",
+    "Spring/IntelliJ - Spring.md",
+    "Spring/Spring Framework.md",
+    "Spring/Spring Boot.md",
+    "Processes/Git.md",
+    "Javascript/Node.md",
+    "Javascript/Mocking.md",
+    "Javascript/Learnings from Express App - Coding Challenge.md",
+    "Javascript/Express - JSON Web Tokens for Authentication.md",
+    "System Design/Questions.md",
+    "Data Structures & Algos/Patterns.md",
+    "System Design/MVCS Model.md",
+    "Data & Databases/Flyway - Manages DB Migrations.md",
+    "Libraries, API's/Axios.md",
+    "Python/Getting Started/Installing Python in Venv.md",
     "Python/Python Syntax.md",
     "Data Structures & Algos/Trees.md",
     "My Learnings/Architecture & Networking Notes.md",
@@ -173,26 +193,6 @@
     "My Learnings/Pasted image 20241025103848.png",
     "Pasted image 20241011111625.png",
     "My Learnings/Screenshot 2024-10-25 at 10.30.11 AM.png",
-    "Idempotent & Immutable.md",
-    "Untitled.md",
-    "Browser.md",
-    "Glossary.md",
-    "Authentication and Authorization.md",
-    "%run.md",
-    "Python/Getting Started/Installing Python in Venv.md",
-    "Django/Django Tutorial.md",
-    "Python/Getting Started/User Authentication and Authorization.md",
-    "Python/Getting Started/Testing Cheatsheet.md",
-    "Python/Getting Started/Python Testing.md",
-    "Python/Getting Started/Building Web App - JS frontend, Flask Server.md",
-    "AWS/AWS Questions.md",
-    "AWS/Lambda.md",
-    "AWS/S3.md",
-    "Java/Java crash course.md",
-    "Java/Java Overview.md",
-    "OOP/OOP.md",
-    "OOP/OOP Best Practices.md",
-    "Javascript/Node.md",
     "Data Structures & Algos/Algos",
     "Data Structures & Algos/imgs/binaryToDecimal.png",
     "AWS/imgs",
