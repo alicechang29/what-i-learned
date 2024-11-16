@@ -13,7 +13,13 @@
 	1. did i save the file 
 	2. am i accessing the right place 
 	3. once i "find the bug", uncomment it out and see if it was the thing that actually fixed the bug 
-	4. if i am still confused about the bug, then i might not have found/understood the bug 
+	4. if i am still confused about the bug, then i might not have found/understood the bug
+
+**Debugging FE** 
+1. start from scratch 
+2. see if i can create that component without the issue 
+3. then go back and comment out tag by tag to narrow down the area 
+
 
 
 **Actual Steps - Express/Node:** 

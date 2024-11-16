@@ -28,6 +28,8 @@ Git is really doing 2 steps:
 3. `Git commit`
 4. Proceed like normal 
 
+If reviewing a PR and there is a merge conflict, message the person to resolve it 
+
 ### Rebase 
 `git pull --rebase`
 
