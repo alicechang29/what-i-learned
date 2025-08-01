@@ -4,21 +4,21 @@
     "type": "split",
     "children": [
       {
-        "id": "d1fa65620f6ded2a",
+        "id": "8fcbe8f1d0df3ac1",
         "type": "tabs",
         "children": [
           {
-            "id": "b68b995751f6efd5",
+            "id": "e2a70fe1bf04957d",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "My Learnings/Learning Diary.md",
+                "file": "DevOps/Docker.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Learning Diary"
+              "title": "Docker"
             }
           }
         ]
@@ -40,7 +40,8 @@
             "state": {
               "type": "file-explorer",
               "state": {
-                "sortOrder": "alphabetical"
+                "sortOrder": "alphabetical",
+                "autoReveal": false
               },
               "icon": "lucide-folder-closed",
               "title": "Files"
@@ -162,10 +163,17 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "b68b995751f6efd5",
+  "active": "e2a70fe1bf04957d",
   "lastOpenFiles": [
-    "My Learnings/Mock Int takeaways.md",
+    "DevOps/Prerequisites.md",
+    "DevOps/Docker.md",
+    "Screenshot 2025-07-20 at 12.36.29 PM.png",
+    "Screenshot 2025-07-20 at 12.36.14 PM.png",
+    "Screenshot 2025-07-20 at 12.29.37 PM.png",
+    "Unix/Bash Scripts.md",
+    "DevOps",
     "My Learnings/Learning Diary.md",
+    "My Learnings/Mock Int takeaways.md",
     "My Learnings/Pasted image 20241025103848.png",
     "My Learnings/Screenshot 2024-10-25 at 10.30.11 AM.png",
     "My Learnings/Practice Notes.md",
@@ -188,10 +196,6 @@
     "Java/Java Overview.md",
     "Spring/IntelliJ - Spring.md",
     "Spring/Spring Framework.md",
-    "Javascript/Node.md",
-    "Javascript/Mocking.md",
-    "Javascript/Learnings from Express App - Coding Challenge.md",
-    "Javascript/Express - JSON Web Tokens for Authentication.md",
     "Pasted image 20241011111625.png",
     "Data Structures & Algos/Algos",
     "Data Structures & Algos/imgs/binaryToDecimal.png",
@@ -205,10 +209,6 @@
     "My Prep",
     "Libraries, API's",
     "OOP",
-    "React/screenshots/Pasted image 20240531164516.png",
-    "Deployments",
-    "Unix/imgs/Pasted image 20240730094903.png",
-    "UNIX/Pasted image 20240730094403.png",
-    "GraphQL/imgs/Pasted image 20240706195938.png"
+    "React/screenshots/Pasted image 20240531164516.png"
   ]
 }
